@@ -18,6 +18,10 @@ int pointY[] = new int[pointCount];
 //initialize strokeVar
 int strokeVar = 255;
 
+//initialize speed
+int xspeed = 1;
+int yspeed = 1;
+
 
 void setup() {
   size(2560,1400,"processing.core.PGraphicsRetina2D"); 
@@ -43,6 +47,10 @@ background(187);
   //no, we want every point connected. let's just start with the point cloud.
   for(int j = 0; j < pointCount; j++) {
     stroke(strokeVar);
+    xspeed = int(random(-3,3));
+    yspeed = int(random(-3,3));
+    pointX[j] += xspeed;
+    pointY[j] += yspeed;
     point(pointX[j],pointY[j]);
   }  
   
