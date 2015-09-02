@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.afaucher\.me$
+RewriteRule ^/?$ "http\:\/\/afaucher\.me\/" [R=301,L]
