@@ -146,7 +146,7 @@ clicking my name
 
 //the callback makes sure the html is loaded
 //before trying to execute these functions
-$('#p001 nav, #p002 nav').load('../_nav.html', function(){
+$('#p001 nav, #p002 nav').load('_nav.html', function(){
 	//$('.project-page nav').load('../../_nav-project.html');
 
 // ANIMATE NAVIGATION
@@ -239,7 +239,7 @@ $('#p001 #projects ul li.project').click(function(){
 	console.log(projectName);
 
 	// assemble a url with the projectName
-	var projectUrl = "http://asf-p-a.pancakeapps.com/projects/" + projectName + "/";
+	var projectUrl = "http://afaucher.me/projects/" + projectName + "/";
 
 	// go to that URL
 	window.location.href = projectUrl;
