@@ -146,7 +146,7 @@ clicking my name
 
 //the callback makes sure the html is loaded
 //before trying to execute these functions
-$('#p001 nav, #p002 nav').load('_nav.html', function(){
+$('#p001 nav, #p002 nav').load('nav.html', function(){
 	//$('.project-page nav').load('../../_nav-project.html');
 
 // ANIMATE NAVIGATION
