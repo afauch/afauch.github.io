@@ -1,3 +1,3 @@
 # afauch.github.io
 
-Portfolio - Landing Page
+Aaron Faucher | UX/UI Design
