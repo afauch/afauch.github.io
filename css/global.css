@@ -1334,10 +1334,26 @@ elements.
 FRAMING
 –––––––––––––––––––––––––––––––*/
 .frame {
-  min-height: 100vh; }
+  min-height: 100vh;
+  position: relative; }
 
 body section:last-of-type {
   height: 90vh; }
+
+.v-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 /*––––––––––––––––––––––––––––––
 HEADERS
@@ -1677,6 +1693,18 @@ case study
 .p003
 
 –––––––––––––––––––––––––––––––*/
+#p003 section#personas img {
+  position: relative;
+  top: -140px; }
+
+#p003 section#scenarios img {
+  position: relative;
+  top: -60px; }
+
+#p003 section#wireframes img {
+  position: relative;
+  top: -60px; }
+
 #p003 section#band aside {
   margin-top: 120px; }
 
@@ -1726,13 +1754,19 @@ case study
   display: block; }
 
 #p006 #recordings img {
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  top: -60px; }
 
 #p006 #recordings div img:nth-of-type(2) {
   padding: 20px 0 0; }
 
+#p006 #views aside {
+  position: relative;
+  top: 20vh; }
+
 /*––––––––––––––––––––––––––––––
-_GABON.SCSS
+_BINDO.SCSS
 
 Specific styling for the
 Gabon
@@ -1797,6 +1831,9 @@ case study
 #p011
 
 –––––––––––––––––––––––––––––––*/
+#p011 section#img001 img {
+  margin-bottom: 40px; }
+
 /*––––––––––––––––––––––––––––––
 _URBANPREP.SCSS
 
