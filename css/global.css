@@ -1282,7 +1282,7 @@ h1, h2 {
   line-height: 28px; }
   @media (min-width: 992px) {
     h1, h2 {
-      font-size: 38px;
+      font-size: 42px;
       line-height: 40px; } }
 
 h1 {
@@ -1338,7 +1338,10 @@ FRAMING
   position: relative; }
 
 body section:last-of-type {
-  height: 90vh; }
+  height: auto; }
+  @media (min-width: 992px) {
+    body section:last-of-type {
+      height: 90vh; } }
 
 .v-center {
   display: -webkit-box;
@@ -1439,7 +1442,10 @@ blockquote cite span {
 FOOTERS
 –––––––––––––––––––––––––––––––*/
 footer {
-  height: 10vh; }
+  height: 60px; }
+  @media (min-width: 992px) {
+    footer {
+      height: 10vh; } }
 
 footer .row span {
   top: 32px; }
@@ -1537,6 +1543,19 @@ _INDEX.SCSS
 Specific styles for the INDEX.HTML page
 
 –––––––––––––––––––––––––––––––*/
+/*––––––––––––––––––––––––––––––
+INTRO
+
+All styles under here pertain
+to the INTRO frame
+
+–––––––––––––––––––––––––––––––*/
+#intro h1 {
+  display: none; }
+  @media (min-width: 992px) {
+    #intro h1 {
+      display: block; } }
+
 /*––––––––––––––––––––––––––––––
 PROJECTS
 
