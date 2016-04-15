@@ -1139,6 +1139,214 @@ hr {
   .hidden-print {
     display: none !important; } }
 /*––––––––––––––––––––––––––––––
+Import 'fullpage.js' assets
+–––––––––––––––––––––––––––––––*/
+/*!
+ * fullPage 2.7.5
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ * Contribution by Jhony0311
+ */
+html.fp-enabled,
+.fp-enabled body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: transparent; }
+
+#superContainer {
+  height: 100%;
+  position: relative;
+  /* Touch detection for Windows 8 */
+  -ms-touch-action: none;
+  /* IE 11 on Windows Phone 8.1*/
+  touch-action: none; }
+
+.fp-section {
+  position: relative;
+  /* Safari<=5 Android<=3 */
+  /* <=28 */
+  box-sizing: border-box; }
+
+.fp-slide {
+  float: left; }
+
+.fp-slide, .fp-slidesContainer {
+  height: 100%;
+  display: block; }
+
+.fp-slides {
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  transition: all 0.3s ease-out; }
+
+.fp-section.fp-table, .fp-slide.fp-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+
+.fp-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%; }
+
+.fp-slidesContainer {
+  float: left;
+  position: relative; }
+
+.fp-controlArrow {
+  -webkit-user-select: none;
+  /* webkit (safari, chrome) browsers */
+  -moz-user-select: none;
+  /* mozilla browsers */
+  -khtml-user-select: none;
+  /* webkit (konqueror) browsers */
+  -ms-user-select: none;
+  /* IE10+ */
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+  .fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent; }
+  .fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff; }
+
+.fp-scrollable {
+  overflow: scroll; }
+
+.fp-notransition {
+  -webkit-transition: none !important;
+  transition: none !important; }
+
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1; }
+  .fp-slidesNav.bottom {
+    bottom: 17px; }
+  .fp-slidesNav.top {
+    top: 17px; }
+
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0; }
+  #fp-nav ul li,
+  .fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position: relative; }
+    #fp-nav ul li a,
+    .fp-slidesNav ul li a {
+      display: block;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      text-decoration: none; }
+      #fp-nav ul li a.active span,
+      .fp-slidesNav ul li a.active span {
+        height: 12px;
+        width: 12px;
+        margin: -6px 0 0 -6px;
+        border-radius: 100%; }
+        #fp-nav ul li:hover #fp-nav ul li a.active span, #fp-slidesNav ul li:hover #fp-nav ul li a.active span, #fp-nav ul li:hover
+        .fp-slidesNav ul li a.active span, #fp-slidesNav ul li:hover
+        .fp-slidesNav ul li a.active span {
+          height: 12px;
+          width: 12px;
+          margin: -6px 0 0 -6px;
+          border-radius: 100%; }
+      #fp-nav ul li a span,
+      .fp-slidesNav ul li a span {
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        height: 4px;
+        width: 4px;
+        border: 0;
+        background: #333;
+        left: 50%;
+        top: 50%;
+        margin: -2px 0 0 -2px;
+        -webkit-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
+    #fp-nav ul li:hover a span,
+    .fp-slidesNav ul li:hover a span {
+      width: 10px;
+      height: 10px;
+      margin: -5px 0px 0px -5px; }
+
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0); }
+  #fp-nav.right {
+    right: 17px; }
+  #fp-nav.left {
+    left: 17px; }
+  #fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0;
+    cursor: pointer; }
+    #fp-nav ul li .fp-tooltip.right {
+      right: 20px; }
+  #fp-nav ul li:hover .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1; }
+  #fp-nav.fp-show-active a.active + .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1; }
+
+.fp-slidesNav ul li {
+  display: inline-block; }
+
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell {
+  height: auto !important; }
+
+/*––––––––––––––––––––––––––––––
 Basic Bootstrap overrides
 –––––––––––––––––––––––––––––––*/
 /*––––––––––––––––––––––––––––––
@@ -1226,33 +1434,33 @@ body {
 NAV
 –––––––––––––––––––––––––––––––*/
 nav ul li {
-  color: #B4B4B4;
+  color: rgba(255, 255, 255, 0.51);
   -webkit-transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
           transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 nav ul li:hover {
-  color: #F9F9F9;
-  background-color: #B4B4B4; }
+  color: rgba(255, 255, 255, 0.97);
+  background-color: rgba(255, 255, 255, 0.51); }
 
 /*––––––––––––––––––––––––––––––
 TEXT
 –––––––––––––––––––––––––––––––*/
 body {
-  color: #F9F9F9; }
+  color: rgba(255, 255, 255, 0.97); }
 
 a:link, a:visited {
-  color: #B4B4B4;
+  color: rgba(255, 255, 255, 0.51);
   text-decoration: none;
   -webkit-transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
           transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 a:hover {
   text-decoration: none;
-  color: #F9F9F9; }
+  color: rgba(255, 255, 255, 0.97); }
 
 a:active {
   text-decoration: none;
-  color: #F9F9F9; }
+  color: rgba(255, 255, 255, 0.97); }
 
 /*––––––––––––––––––––––––––––––
 FOOTER
@@ -1334,11 +1542,12 @@ elements.
 FRAMING
 –––––––––––––––––––––––––––––––*/
 .frame {
-  min-height: 100vh;
+  height: 100vh;
   position: relative; }
 
 body section:last-of-type {
-  height: auto; }
+  height: auto;
+  position: relative; }
   @media (min-width: 992px) {
     body section:last-of-type {
       height: 90vh; } }
@@ -1379,9 +1588,6 @@ h1, h2 {
       padding: 40px 0 0;
       height: 200px; } }
 
-/*ul.row {
-	padding: 20px 0 0;
-}*/
 h3 {
   padding: 20px 0 0;
   margin: 0 0 20px; }
@@ -1403,7 +1609,7 @@ nav ul ul.project-nav li {
 
 nav ul ul.project-nav li:hover,
 nav ul li:hover {
-  background-color: #727272;
+  background-color: rgba(255, 255, 255, 0.07);
   cursor: pointer; }
 
 /*––––––––––––––––––––––––––––––
@@ -1439,6 +1645,16 @@ blockquote cite span {
   display: block; }
 
 /*––––––––––––––––––––––––––––––
+BIG IMAGES
+–––––––––––––––––––––––––––––––*/
+.big-img {
+  height: 100vh;
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+/*––––––––––––––––––––––––––––––
 FOOTERS
 –––––––––––––––––––––––––––––––*/
 footer {
@@ -1464,6 +1680,7 @@ the whole site
 "AARON FAUCHER"
 –––––––––––––––––––––––––––––––*/
 #intro header {
+  position: relative;
   -webkit-transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
           transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
 
@@ -1474,7 +1691,7 @@ the whole site
 NAV
 –––––––––––––––––––––––––––––––*/
 nav ul li {
-  border-bottom: solid 2px #727272; }
+  border-bottom: solid 2px rgba(255, 255, 255, 0.07); }
 
 nav ul ul.project-nav li:hover,
 nav ul li:hover {
@@ -1490,7 +1707,7 @@ address {
 HANGLINE
 –––––––––––––––––––––––––––––––*/
 .container header.row {
-  border-bottom: solid 2px #727272; }
+  border-bottom: solid 2px rgba(255, 255, 255, 0.07); }
 
 /*––––––––––––––––––––––––––––––
 FIGURE CAPTIONS
@@ -1502,29 +1719,11 @@ aside h3:before {
   top: 0;
   height: 2px;
   width: 12.5%;
-  border-bottom: solid 2px #727272; }
+  border-bottom: solid 2px rgba(255, 255, 255, 0.07); }
 
 /*––––––––––––––––––––––––––––––
 GRAYSCALE IMAGES
 –––––––––––––––––––––––––––––––*/
-img {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  /* Firefox 3.5+ */
-  filter: gray;
-  /* IE6-9 */
-  -webkit-filter: grayscale(100%);
-  /* Chrome 19+ & Safari 6+ */
-  -webkit-transition: all 500ms;
-          transition: all 500ms; }
-
-img:hover {
-  filter: none;
-  -webkit-filter: grayscale(0%); }
-
-img.line-art {
-  filter: none;
-  -webkit-filter: none; }
-
 /*––––––––––––––––––––––––––––––
 MISC
 –––––––––––––––––––––––––––––––*/
@@ -1533,6 +1732,145 @@ MISC
 
 .right {
   text-align: right; }
+
+/*––––––––––––––––––––––––––––––
+_MICROINTERACTIONS.SCSS
+
+Menu and 'to top' buttons
+
+–––––––––––––––––––––––––––––––*/
+/*––––––––––––––––––––––––––––––
+PRE-NAV
+–––––––––––––––––––––––––––––––*/
+.prenav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0); }
+
+/* Hamburger Icon */
+/* http://codepen.io/designcouch/pen/Atyop */
+#nav-icon {
+  width: 10px;
+  height: 7px;
+  position: relative;
+  margin: 50px auto 10px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+          transition: .5s ease-in-out;
+  cursor: pointer; }
+
+#nav-icon span {
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 0px;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+          transition: .25s ease-in-out; }
+
+#nav-icon span:nth-child(1) {
+  top: 0px; }
+
+#nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
+  top: 3px; }
+
+#nav-icon span:nth-child(4) {
+  top: 6px; }
+
+#nav-icon.open span:nth-child(1) {
+  top: 3px;
+  width: 0%;
+  left: 50%; }
+
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+#nav-icon.open span:nth-child(4) {
+  top: 3px;
+  width: 0%;
+  left: 50%; }
+
+/*––––––––––––––––––––––––––––––
+TO TOP
+–––––––––––––––––––––––––––––––*/
+section:last-of-type header {
+  position: relative; }
+
+section:last-of-type header:hover {
+  cursor: pointer; }
+
+.totop {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0); }
+
+/* Hamburger Icon */
+/* http://codepen.io/designcouch/pen/Atyop */
+#top-icon {
+  width: 10px;
+  height: 7px;
+  position: relative;
+  margin: 50px auto 10px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+          transition: .5s ease-in-out;
+  cursor: pointer; }
+
+#top-icon span {
+  display: block;
+  position: absolute;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 0px;
+  -webkit-transition: .25s ease-in-out;
+          transition: .25s ease-in-out; }
+
+#top-icon span:nth-child(1) {
+  top: 0px;
+  right: 0px;
+  width: 55%;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg); }
+
+#top-icon span:nth-child(2) {
+  top: 0px;
+  left: 0px;
+  width: 55%;
+  -webkit-transform: rotate(330deg);
+          transform: rotate(330deg); }
+
+#top-icon.open span:nth-child(1) {
+  top: 3px;
+  width: 0%;
+  left: 50%; }
+
+#top-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+#top-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+#top-icon.open span:nth-child(4) {
+  top: 3px;
+  width: 0%;
+  left: 50%; }
 
 /*––––––––––––––––––––––––––––––
 Import partial modules
@@ -1574,16 +1912,16 @@ CATEGORY SELECTORS
       margin: 55px 0 0; } }
 
 #projects header ul li {
-  color: #B4B4B4;
+  color: rgba(255, 255, 255, 0.51);
   -webkit-transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
           transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 #projects header ul li:hover {
-  color: #727272;
+  color: rgba(255, 255, 255, 0.97);
   cursor: pointer; }
 
 #projects header ul li.selected {
-  color: #F9F9F9; }
+  color: rgba(255, 255, 255, 0.97); }
 
 /*––––––––––––––––––––––––––––––
 SPACING
@@ -1608,14 +1946,24 @@ SPACING
 /*––––––––––––––––––––––––––––––
 STYLING
 –––––––––––––––––––––––––––––––*/
+#projects ul.row li {
+  opacity: 1; }
+  @media (min-width: 992px) {
+    #projects ul.row li {
+      opacity: 0.4;
+      -webkit-transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+              transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; } }
+
 #projects ul.row li:hover {
   cursor: pointer;
-  opacity: 0.4;
+  opacity: 1;
   -webkit-transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
           transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 #projects ul.row li {
-  color: #F9F9F9; }
+  color: rgba(255, 255, 255, 0.97); }
 
 /*––––––––––––––––––––––––––––––
 LINE ART
@@ -1737,7 +2085,7 @@ case study
 
 –––––––––––––––––––––––––––––––*/
 #p004 section#premise .row li {
-  border-top: solid 2px #727272; }
+  border-top: solid 2px rgba(255, 255, 255, 0.07); }
 
 #p004 #uses header img {
   height: 92px;

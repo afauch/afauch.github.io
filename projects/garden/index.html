@@ -48,9 +48,13 @@ GARDEN
 </head>
 <body class="project-page" id="p004" style="display:none;">
 
+<!-- FULLPAGE.JS ELEMENT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div id="fullpage">
+
 <!-- FRAME 1 - GARDEN
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="intro">
+<section class="section" id="intro" data-hex="#686868">
 
 	<div class="container frame">
 
@@ -61,6 +65,19 @@ GARDEN
 			<div class="col-xs-2">
 
 				<img class="line-art" src="line-art.png"/>
+
+			</div>
+
+			<!-- PRE NAV
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+			<div class="prenav" style="display: none">
+
+				<div id="nav-icon">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
 
 			</div>
 
@@ -90,7 +107,7 @@ GARDEN
 <!-- FRAME 2 - PREMISE
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<section id="premise">
+<section class="section"  id="premise" data-hex="#686868">
 	
 	<div class="container frame">
 
@@ -127,7 +144,7 @@ GARDEN
 <!-- FRAME 3 - IMG001
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<section id="img001">
+<section class="section"  id="img001" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -139,7 +156,7 @@ GARDEN
 
 <!-- FRAME 4 - CONCEPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="concept">
+<section class="section"  id="concept" data-hex="#686868">
 	
 	<div class="container frame">
 
@@ -175,7 +192,7 @@ GARDEN
 <!-- FRAME 5 - GALLERY 1
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<section id="img002">
+<section class="section"  id="img002" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -185,7 +202,7 @@ GARDEN
 
 </section>
 
-<section id="img003">
+<section class="section"  id="img003" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -195,7 +212,7 @@ GARDEN
 
 </section>
 
-<section id="img004">
+<section class="section"  id="img004" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -205,7 +222,7 @@ GARDEN
 
 </section>
 
-<section id="img005">
+<section class="section"  id="img005" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -215,7 +232,7 @@ GARDEN
 
 </section>
 
-<section id="img006">
+<section class="section"  id="img006" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -227,7 +244,7 @@ GARDEN
 
 <!-- FRAME 6 - USES
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="uses">
+<section class="section"  id="uses" data-hex="#686868">
 	
 	<div class="container frame">
 
@@ -260,7 +277,7 @@ GARDEN
 <!-- FRAME 7 - GALLERY 2
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<section id="img007">
+<section class="section"  id="img007" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -270,7 +287,7 @@ GARDEN
 
 </section>
 
-<section id="img008">
+<section class="section"  id="img008" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -280,7 +297,7 @@ GARDEN
 
 </section>
 
-<section id="img009">
+<section class="section"  id="img009" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -290,7 +307,7 @@ GARDEN
 
 </section>
 
-<section id="img010">
+<section class="section"  id="img010" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -302,7 +319,7 @@ GARDEN
 
 <!-- FRAME 8 - INSIGHT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="insight">
+<section class="section"  id="insight" data-hex="#686868">
 
 	<div class="container frame">
 
@@ -328,7 +345,7 @@ GARDEN
 
 <!-- FRAME 9 - RESTful
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="restful">
+<section class="section"  id="restful" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -352,13 +369,24 @@ GARDEN
 <!-- FRAME 10 - CREDITS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<section id="credits">
+<section class="section"  id="credits" data-hex="#686868">
 
 	<div class="container frame">
 
 		<header class="row">
 
 			<h2 class="col-xs-4 col-md-2">Garden</h2>
+
+			<!-- TO TOP
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+			<div class="totop" style="display: none">
+
+				<div id="top-icon">
+				  <span></span>
+				  <span></span>
+				</div>
+
+			</div>	
 
 		</header>
 		
@@ -425,6 +453,10 @@ GARDEN
 <footer>
 
 </footer>
+
+<!-- END FULLPAGE.JS ELEMENT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</div>
 
 <!-- SCRIPTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->

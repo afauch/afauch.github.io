@@ -48,9 +48,13 @@ ARVR
 </head>
 <body class="project-page" id="p005" style="display:none;">
 
+<!-- FULLPAGE.JS ELEMENT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div id="fullpage">
+
 <!-- FRAME 1 - ARVR
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="intro">
+<section class="section" id="intro" data-hex="#686868">
 
 	<div class="container frame">
 
@@ -61,6 +65,19 @@ ARVR
 			<div class="col-xs-2">
 
 				<img class="line-art" src="line-art.png"/>
+
+			</div>
+
+			<!-- PRE NAV
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+			<div class="prenav" style="display: none">
+
+				<div id="nav-icon">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
 
 			</div>
 
@@ -91,7 +108,7 @@ ARVR
 
 <!-- FRAME 2 - RECENT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="recent">
+<section class="section" id="recent" data-hex="#686868">
 	
 	<div class="container frame content-1">
 
@@ -134,62 +151,44 @@ ARVR
 <!-- FRAME 3 - GALLERY
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<section id="img001">
+<section class="section" id="img001" data-hex="#686868">
 
-	<div class="container frame v-center">
-
-		<img class="col-xs-4" src="img001.jpg" />
-
+	<div class="big-img" style="background-image:url('img001.jpg')">
 	</div>
 
 </section>
 
-<section id="img002">
+<section class="section" id="img002" data-hex="#686868">
 
-	<div class="container frame v-center">
-
-		<img class="col-xs-4" src="img002.jpg" />
-
+	<div class="big-img" style="background-image:url('img002.jpg')">
 	</div>
 
 </section>
 
-<section id="img003">
+<section class="section" id="img003" data-hex="#686868">
 
-	<div class="container frame v-center">
-
-		<img class="col-xs-4" src="img003.jpg" />
-
+	<div class="big-img" style="background-image:url('img003.jpg')">
 	</div>
 
 </section>
 
-<section id="img004">
+<section class="section" id="img004" data-hex="#686868">
 
-	<div class="container frame v-center">
-
-		<img class="col-xs-4" src="img004.jpg" />
-
+	<div class="big-img" style="background-image:url('img004.jpg')">
 	</div>
 
 </section>
 
-<section id="img005">
+<section class="section" id="img005" data-hex="#686868">
 
-	<div class="container frame v-center">
-
-		<img class="col-xs-4" src="img005.jpg" />
-
+	<div class="big-img" style="background-image:url('img005.jpg')">
 	</div>
 
 </section>
 
-<section id="img006">
+<section class="section" id="img006" data-hex="#686868">
 
-	<div class="container frame v-center">
-
-		<img class="col-xs-4" src="img006.jpg" />
-
+	<div class="big-img" style="background-image:url('img006.jpg')">
 	</div>
 
 </section>
@@ -198,13 +197,24 @@ ARVR
 <!-- FRAME 4 - CREDITS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<section id="credits">
+<section class="section" id="credits" data-hex="#686868">
 
 	<div class="container frame">
 
 		<header class="row">
 
 			<h2 class="col-xs-4 col-md-2">UX/UI for AR/VR</h2>
+
+			<!-- TO TOP
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+			<div class="totop" style="display: none">
+
+				<div id="top-icon">
+				  <span></span>
+				  <span></span>
+				</div>
+
+			</div>
 
 		</header>
 		
@@ -287,6 +297,10 @@ ARVR
 <footer>
 
 </footer>
+
+<!-- END FULLPAGE.JS ELEMENT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</div>
 
 <!-- SCRIPTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->

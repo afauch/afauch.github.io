@@ -4,7 +4,6 @@ GOODMORNING
 
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,9 +47,13 @@ GOODMORNING
 </head>
 <body class="project-page" id="p010" style="display:none;">
 
+<!-- FULLPAGE.JS ELEMENT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div id="fullpage">
+
 <!-- FRAME 1 - GOOD MORNING
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="intro">
+<section class="section" id="intro" data-hex="#686868">
 
 	<div class="container frame">
 
@@ -61,6 +64,19 @@ GOODMORNING
 			<div class="col-xs-2">
 
 				<img class="line-art" src="line-art.png"/>
+
+			</div>
+
+			<!-- PRE NAV
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+			<div class="prenav" style="display: none">
+
+				<div id="nav-icon">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
 
 			</div>
 
@@ -90,7 +106,7 @@ GOODMORNING
 <!-- FRAME 2 - IMG001
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<section id="img001">
+<section class="section" id="img001" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -103,7 +119,7 @@ GOODMORNING
 
 <!-- FRAME 2 - CONCEPT
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="concept">
+<section class="section" id="concept" data-hex="#686868">
 	
 	<div class="container frame content-1">
 
@@ -139,7 +155,7 @@ GOODMORNING
 
 <!-- FRAME 3 - AFFORDANCE
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="affordance">
+<section class="section" id="affordance" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -162,7 +178,7 @@ GOODMORNING
 
 <!-- FRAME 4 - AFFORDANCE
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="affordance">
+<section class="section" id="affordance" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -186,7 +202,7 @@ GOODMORNING
 
 <!-- FRAME 5 - INSIGHTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="insight">
+<section class="section" id="insight" data-hex="#686868">
 	
 	<div class="container frame content-1">
 
@@ -227,7 +243,7 @@ GOODMORNING
 
 <!-- FRAME 6 - FEATURE
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="feature">
+<section class="section" id="feature" data-hex="#686868">
 
 	<div class="container frame">
 
@@ -254,7 +270,7 @@ GOODMORNING
 <!-- FRAME 7 - IMG004
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<section id="img004">
+<section class="section" id="img004" data-hex="#686868">
 
 	<div class="container frame v-center">
 
@@ -267,13 +283,24 @@ GOODMORNING
 <!-- FRAME 8 - CREDITS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-<section id="credits">
+<section class="section" id="credits" data-hex="#686868">
 
 	<div class="container frame">
 
 		<header class="row">
 
 			<h2 class="col-xs-4 col-md-2">Good Morning</h2>
+
+			<!-- TO TOP
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+			<div class="totop" style="display: none">
+
+				<div id="top-icon">
+				  <span></span>
+				  <span></span>
+				</div>
+
+			</div>	
 
 		</header>
 		
@@ -337,6 +364,10 @@ GOODMORNING
 <footer>
 
 </footer>
+
+<!-- END FULLPAGE.JS ELEMENT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</div>
 
 <!-- SCRIPTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
