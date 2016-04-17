@@ -1722,9 +1722,6 @@ aside h3:before {
   border-bottom: solid 2px rgba(255, 255, 255, 0.07); }
 
 /*––––––––––––––––––––––––––––––
-GRAYSCALE IMAGES
-–––––––––––––––––––––––––––––––*/
-/*––––––––––––––––––––––––––––––
 MISC
 –––––––––––––––––––––––––––––––*/
 .italic {
@@ -1732,6 +1729,9 @@ MISC
 
 .right {
   text-align: right; }
+
+.pointer {
+  cursor: pointer; }
 
 /*––––––––––––––––––––––––––––––
 _MICROINTERACTIONS.SCSS
@@ -1951,16 +1951,15 @@ STYLING
   @media (min-width: 992px) {
     #projects ul.row li {
       opacity: 0.4;
-      -webkit-transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
-              transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
       -webkit-animation-fill-mode: forwards;
               animation-fill-mode: forwards; } }
 
-#projects ul.row li:hover {
+#projects ul.row li.focus {
   cursor: pointer;
-  opacity: 1;
-  -webkit-transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
-          transition: opacity 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+  opacity: 1; }
+
+#projects ul.row li.hidden {
+  display: none; }
 
 #projects ul.row li {
   color: rgba(255, 255, 255, 0.97); }
@@ -2011,7 +2010,7 @@ LINE ART
       height: 160px;
       padding: 40px 0 0; } }
 
-.project-page img.line-art:hover {
+.project-page img.line-art.focus {
   opacity: 0.4;
   cursor: pointer; }
 

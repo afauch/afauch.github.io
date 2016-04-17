@@ -7,7 +7,7 @@
 
 function InitiateColorFade() {
 
-	console.log('InitiateColorFadeStarted.');
+	//console.log('InitiateColorFadeStarted.');
 
 	var currentScrollPos; // holds the currentScrollPos
 	var colorSectionArray = []; // holds the set of colorSection objects
@@ -17,11 +17,11 @@ function InitiateColorFade() {
 	$(document).ready(function(){
 
 		// Am I in?
-		console.log('revised.js running');
+		//console.log('revised.js running');
 
 		// How many sections?
 		var numberOfSections = $('section').length;
-		console.log('number of sections:' + numberOfSections);
+		//console.log('number of sections:' + numberOfSections);
 
 		// Actually, instead of using that array to just hold the hex values
 		// create an array of objects and populate certain properties about them
@@ -38,7 +38,7 @@ function InitiateColorFade() {
 			// grab the top pixel value
 			colorSectionArray[i].sectionTop = $('section:nth-of-type('+(i+1)+')').offset().top;
 			// debug
-			console.log('Just ran sectionTop for section ' + colorSectionArray[i].sectionNumber);
+			//console.log('Just ran sectionTop for section ' + colorSectionArray[i].sectionNumber);
 
 			// grab the height of the section in px
 			colorSectionArray[i].sectionHeight = $('section:nth-of-type('+(i+1)+')').outerHeight();
@@ -47,7 +47,7 @@ function InitiateColorFade() {
 			colorSectionArray[i].hex = $('section:nth-of-type('+(i+1)+')').data("hex");
 
 			// debug
-			// console.log('Section #' + colorSectionArray[i].sectionNumber + ' is color ' + colorSectionArray[i].hex + ', is located at ' + colorSectionArray[i].sectionTop + ', and has height ' + colorSectionArray[i].sectionHeight + '.');
+			// //console.log('Section #' + colorSectionArray[i].sectionNumber + ' is color ' + colorSectionArray[i].hex + ', is located at ' + colorSectionArray[i].sectionTop + ', and has height ' + colorSectionArray[i].sectionHeight + '.');
 
 
 
@@ -62,7 +62,7 @@ function InitiateColorFade() {
 			colorSectionArray[j].b = hexToRgb(colorSectionArray[j].hex).b;
 
 			// proof it
-			console.log('Section #' + colorSectionArray[j].sectionNumber + ' with hex ' + colorSectionArray[j].hex + 'has rgb values of (' + colorSectionArray[j].r + ', ' + colorSectionArray[j].g + ', ' + colorSectionArray[j].b + ').' );
+			//console.log('Section #' + colorSectionArray[j].sectionNumber + ' with hex ' + colorSectionArray[j].hex + 'has rgb values of (' + colorSectionArray[j].r + ', ' + colorSectionArray[j].g + ', ' + colorSectionArray[j].b + ').' );
 
 		}
 
@@ -78,7 +78,7 @@ function InitiateColorFade() {
 	$(document).scroll(function(){
 
 		// debug
-		console.log('Scrolling');
+		//console.log('Scrolling');
 
 		GetScrollPos();
 		SetColor(currentSection-1);
@@ -114,7 +114,7 @@ function InitiateColorFade() {
 
 		// DEBUG - is this working right?
 		currentScrollPos = $(document).scrollTop();
-		console.log('currentScrollPos: ' + currentScrollPos);
+		//console.log('currentScrollPos: ' + currentScrollPos);
 
 		// which section am I in?
 		for (var k = 0; k < colorSectionArray.length; k++) {
@@ -122,7 +122,7 @@ function InitiateColorFade() {
 			if (currentScrollPos > colorSectionArray[k].sectionTop && currentScrollPos <= (colorSectionArray[k].sectionTop + colorSectionArray[k].sectionHeight)) {
 
 				currentSection = colorSectionArray[k].sectionNumber;
-				console.log('Current section is ' + currentSection);
+				//console.log('Current section is ' + currentSection);
 
 			}
 
@@ -146,7 +146,7 @@ function InitiateColorFade() {
 			];
 
 			// DEBUG
-			console.log('Diff is ' + diff);
+			//console.log('Diff is ' + diff);
 
 			// divide the difference by the section height to get the increment
 			// and assign it back to the object
@@ -157,7 +157,7 @@ function InitiateColorFade() {
 			];
 
 			// DEBUG
-			console.log('Incr is ' + colorSectionArray[l].increment);
+			//console.log('Incr is ' + colorSectionArray[l].increment);
 
 
 		}
@@ -167,7 +167,7 @@ function InitiateColorFade() {
 	function InitializePageColor() {
 
 		currentColor = 'rgb('+colorSectionArray[0].r+','+colorSectionArray[0].g+','+colorSectionArray[0].b+')';
-		console.log(currentColor);
+		//console.log(currentColor);
 		$('body').css('background-color',currentColor);
 
 	}
@@ -177,7 +177,7 @@ function InitiateColorFade() {
 		// variable to store the difference between the top of the section and the scrollposition
 		// so we know how much increment to add
 		var topDiff = currentScrollPos - colorSectionArray[thisSection].sectionTop;
-		console.log('topDiff = ' + topDiff);
+		//console.log('topDiff = ' + topDiff);
 
 		// Set the page color: pixels times increment
 		var currentR = (colorSectionArray[thisSection].r + (topDiff * colorSectionArray[thisSection].increment[0])).toFixed(0);
@@ -185,7 +185,7 @@ function InitiateColorFade() {
 		var currentB = (colorSectionArray[thisSection].b + (topDiff * colorSectionArray[thisSection].increment[2])).toFixed(0);
 
 		currentColor = 'rgb('+currentR+','+currentG+','+currentB+')';
-		console.log(currentColor);
+		//console.log(currentColor);
 		$('body').css('background-color',currentColor);
 
 	}
@@ -202,8 +202,8 @@ data settings
 
 $('#projects ul.categories li').click(function() {
 
-	//console.log - did it work
-	console.log("clicked!");
+	////console.log - did it work
+	//console.log("clicked!");
 	//yes! move on
 
 	// highlight the appropriate nav element
@@ -214,21 +214,21 @@ $('#projects ul.categories li').click(function() {
 	var categoryId = $(this).data('filter');
 
 	// console log
-	console.log(categoryId);
+	//console.log(categoryId);
 
 	//create a variable to concatenate class name onto li data-filter
 	var $boxId = $(".project-" + categoryId);
 
 	// console log, to make sure we're selecting the correct element
-	console.log($boxId);
-	console.log($boxId.selector);
+	//console.log($boxId);
+	//console.log($boxId.selector);
 	
 	// fadeOut, and do the rest of this as a callback function
-	$('.project:visible').fadeOut("slow",function() {
+	$('.project:visible').fadeOut(800,function() {
 
 		//show the div with the correct class
-		$boxId.fadeIn("slow");
-		console.log("faded in");
+		$boxId.fadeIn(800);
+		//console.log("faded in");
 
 	});
 
@@ -496,24 +496,24 @@ $('nav').load(baseUrl+'/nav.html',function(){
 		});
 
 		$('nav ul li').click(function(){
-			console.log("CLICKED");
+			//console.log("CLICKED");
 			var linkName = $(this).data('name');
-			console.log(linkName);
+			//console.log(linkName);
 
 			switch(linkName) {
 				case 'home':
-					console.log("Go Home!");
+					//console.log("Go Home!");
 					goToUrl(baseUrl, '/index.html');
 					break;
 				case 'about':
-					console.log("Go to About!");
+					//console.log("Go to About!");
 					goToUrl(baseUrl, '/about.html');
 					break;
 				case 'projects':
-					console.log("Don't do anything!");
+					//console.log("Don't do anything!");
 					break;
 				default:
-					console.log("Must be a project!");
+					//console.log("Must be a project!");
 					goToUrl(baseUrl, '/projects/'+linkName+'/');
 			}
 
@@ -570,16 +570,35 @@ to project pages.
 
 ––––––––––––––––––––––––––––––*/
 
+$('#p001 #projects ul li.project').mouseenter(function(){
+
+	//console.log("ENTER");
+	// $(this).addClass('focus');
+	$(this).addClass('pointer');
+	$(this).fadeTo(400,'1');
+
+});
+
+$('#p001 #projects ul li.project').mouseleave(function(){
+
+	//console.log("LEAVE");
+	// $(this).removeClass('focus');
+	$(this).removeClass('pointer');
+	$(this).fadeTo(300,'.4');
+
+});
+
+
 $('#p001 #projects ul li.project').click(function(){
 
 	// did the click work?
-	console.log("CLICKED");
+	//console.log("CLICKED");
 
 	// create a var to hold the projectName
 	var projectName = $(this).data('name');
 
 	// log the projectName, just to be sure
-	console.log(projectName);
+	//console.log(projectName);
 
 	// call the 'goToUrl' function
 	goToUrl(baseUrl,'/projects/'+projectName+'/');
