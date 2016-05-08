@@ -541,7 +541,8 @@ $(document).ready(function(){
 			//"scrollBar: true" is required
 			//to play nice with
 			//InitiateColorFade
-			scrollBar: true
+			scrollBar: true,
+			responsive: 992
 
 
 		});
