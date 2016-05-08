@@ -536,7 +536,16 @@ $(document).ready(function(){
 		// Instantiate ColorFade plugin
 		InitiateColorFade();
 		// Instantiate Fullpage.js
-		$('#fullpage').fullpage({
+
+
+		// IF THIS IS A PROJECT PAGE
+		// AND IS MOBILE
+		// TURN OFF FULLPAGE.JS
+		var pageId = $('body').attr('id');
+		if(pageId != 'p001'){
+
+			console.log('This is a project page');
+			$('#fullpage').fullpage({
 
 			//"scrollBar: true" is required
 			//to play nice with
@@ -544,8 +553,20 @@ $(document).ready(function(){
 			scrollBar: true,
 			responsive: 992
 
+			});
 
-		});
+		} else {
+
+			$('#fullpage').fullpage({
+
+			//"scrollBar: true" is required
+			//to play nice with
+			//InitiateColorFade
+			scrollBar: true,
+			responsive: 0
+
+			});
+		}
 
 	});
 
