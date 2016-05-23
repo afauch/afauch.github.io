@@ -748,13 +748,10 @@ function getProjects() {
 		pulseband,
 		garden,
 		arvr,
-		prdnjy,
+		zeropercent,
 		bindo,
-		ifarm,
-		echoes,
 		goodmorning,
 		spoter,
-		urbanprep,
 		wit3d
 		//zeropercent
 	];
