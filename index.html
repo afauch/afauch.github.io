@@ -34,6 +34,12 @@ AARON.FAUCHER@GMAIL.COM
 	––––––––––––––––––––––––––––––––––––––––––––––––––  --> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
+	<!-- OWL
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<!-- Owl Carousel Assets -->
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+
 	<!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" type="text/css" href="css/global.min.css" />
@@ -120,21 +126,21 @@ AARON.FAUCHER@GMAIL.COM
 
 		</header>
 
-		<ul class="row">
+		<ul class="row disciplines-carousel owl-carousel owl-theme">
 
-			<li class="col-xs-4 col-md-1">
+			<li class="item">
 				<h3>Design</h3>
 				<p>Augmented reality, affective computing, and machine learning – three technologies poised to change the way we live in the next 10-20 years. I blend a background in UX/UI and Human-Centered Design to build systems that focus on deep human concerns like empathy and spirituality.</p>
 				<!--<a href="#">See More</a>-->
 			</li>
 
-			<li class="col-xs-4 col-md-1">
+			<li class="item">
 				<h3>Art</h3>
 				<p>My multimedia art practice considers the digital and the eternal – how the subjective human experience has been touched by ubiquitous computing. I bring a background in music composition, choreography, and performance to my work in interactive multimedia art.</p>
 				<!--<a href="#">See More</a>-->
 			</li>
 
-			<li class="col-xs-4 col-md-1">
+			<li class="item">
 			<h3>Impact</h3>
 				<p>My work is rooted in a commitment to positive social impact over profit. I am deeply interested in global human quality-of-life. I have worked within international and community development contexts, and bring a critical eye to basic assumptions around social development.</p>
 				<!--<a href="#">See More</a>-->
@@ -288,9 +294,9 @@ AARON.FAUCHER@GMAIL.COM
 
 		</header>
 		
-		<ul class="row">
+		<ul class="row contact-carousel owl-carousel owl-theme">
 
-			<li class="col-xs-4 col-md-1">
+			<li class="item">
 				<h3>Contact Information</h3>
 				<p>+1 978 424 1590<br/>
 				<a href="mailto:aaron.faucher@gmail.com" target="_blank">aaron.faucher@gmail.com</a></p>
@@ -298,7 +304,7 @@ AARON.FAUCHER@GMAIL.COM
 				<p>You can view my resume <a href="FaucherResume.pdf" target="_blank">here</a>.</p>
 			</li>
 
-			<li class="col-xs-4 col-md-1">
+			<li class="item">
 				<h3>Recent Writing</h3>
 				<ul>
 					<li><a href="http://designation.io/blog/animating-microinteractions-maya/" target="_blank">AR/VR Microinteractions in Maya</a></li>
@@ -309,7 +315,7 @@ AARON.FAUCHER@GMAIL.COM
 				</ul>
 			</li>
 
-			<li class="col-xs-4 col-md-1">
+			<li class="item">
 				<h3>Recent Events</h3>
 				<ul>
 					<li><a href="https://www.eventbrite.com/e/arvr-ui-hackathon-tickets-22509511555" target="_blank">AR/VR UI Hackathon</a></li>
@@ -320,7 +326,7 @@ AARON.FAUCHER@GMAIL.COM
 				</ul>
 			</li>
 
-			<li class="col-xs-4 col-md-1">
+			<li class="item">
 				<h3>Links</h3>
 				<ul>
 					<li>Read my thoughts on <a href="http://medium.com/@f0sh_" target="_blank">Medium</a></li>
@@ -349,6 +355,26 @@ AARON.FAUCHER@GMAIL.COM
 <!-- SCRIPTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <script type="text/javascript" src="js/script.min.js"></script>
+<!-- OWL -->
+<script src="owl-carousel/owl.carousel.js"></script>
+<script>
+   $(document).ready(function($) {
+      $(".disciplines-carousel").owlCarousel({
+
+      	items: 4,
+      	autoHeight: false
+
+      });
+
+      $(".contact-carousel").owlCarousel({
+
+      	items: 4,
+      	autoHeight: false
+
+      });
+
+    });
+</script>
 
 </body>
 </html>
