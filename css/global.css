@@ -2202,6 +2202,11 @@ case study
 #p005 #credits ul li ul {
   min-height: 100px; }
 
+@media (min-width: 992px) {
+  #p005 section#blogs li {
+    position: relative;
+    top: -60px; } }
+
 /*––––––––––––––––––––––––––––––
 _PRDNJY.SCSS
 
