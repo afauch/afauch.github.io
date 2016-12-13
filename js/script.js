@@ -495,29 +495,29 @@ $('nav').load(baseUrl+'/nav.html',function(){
 
 		});
 
-		$('nav ul li').click(function(){
-			//console.log("CLICKED");
-			var linkName = $(this).data('name');
-			//console.log(linkName);
+		// $('nav ul li').click(function(){
+		// 	//console.log("CLICKED");
+		// 	var linkName = $(this).data('name');
+		// 	//console.log(linkName);
 
-			switch(linkName) {
-				case 'home':
-					//console.log("Go Home!");
-					goToUrl(baseUrl, '/index.html');
-					break;
-				case 'about':
-					//console.log("Go to About!");
-					goToUrl(baseUrl, '/about.html');
-					break;
-				case 'projects':
-					//console.log("Don't do anything!");
-					break;
-				default:
-					//console.log("Must be a project!");
-					goToUrl(baseUrl, '/projects/'+linkName+'/');
-			}
+		// 	switch(linkName) {
+		// 		case 'home':
+		// 			//console.log("Go Home!");
+		// 			goToUrl(baseUrl, '/index.html');
+		// 			break;
+		// 		case 'about':
+		// 			//console.log("Go to About!");
+		// 			goToUrl(baseUrl, '/about.html');
+		// 			break;
+		// 		case 'projects':
+		// 			//console.log("Don't do anything!");
+		// 			break;
+		// 		default:
+		// 			//console.log("Must be a project!");
+		// 			goToUrl(baseUrl, '/projects/'+linkName+'/');
+		// 	}
 
-		});
+		// });
 
 
 	});
