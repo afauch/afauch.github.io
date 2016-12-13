@@ -2037,23 +2037,16 @@ MOBILE PROJECT RENDERING
 /*––––––––––––––––––––––––––––––
 STYLING
 –––––––––––––––––––––––––––––––*/
-#projects ul.row li {
-  opacity: 1; }
-  @media (min-width: 992px) {
-    #projects ul.row li {
-      opacity: 0.4;
-      -webkit-animation-fill-mode: forwards;
-              animation-fill-mode: forwards; } }
-
-#projects ul.row li.focus {
-  cursor: pointer;
-  opacity: 1; }
-
-#projects ul.row li.hidden {
-  display: none; }
-
-#projects ul.row li {
+#projects ul.row a li {
+  opacity: 0.4;
+  -webkit-transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
   color: rgba(255, 255, 255, 0.97); }
+
+#projects ul.row a:hover li {
+  opacity: 1;
+  -webkit-transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition: all 500ms cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 /*––––––––––––––––––––––––––––––
 LINE ART
