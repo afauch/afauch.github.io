@@ -17,32 +17,43 @@ AARON.FAUCHER@GMAIL.COM
 	<!-- BASICS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta charset="utf-8">
-	<title>Aaron Faucher | UX/UI Design</title>
+	<title>Aaron Faucher | Product Designer</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
+
+	<!-- FAVICON
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
 	<!-- MOBILE VIEWPORT
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- BOOTSTRAP
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/vendors/_bootstrap.css">
+
+	<!-- RESET
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<link rel="stylesheet" href="css/vendors/_normalize.css">	
+
 	<!-- ADOBE TYPEKIT
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script src="https://use.typekit.net/fgv6vba.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link rel="stylesheet" href="https://use.typekit.net/xsr8czi.css">
+
+	<!-- FONT AWESOME
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 	<!-- JQUERY
 	––––––––––––––––––––––––––––––––––––––––––––––––––  --> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-	<!-- OWL
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<!-- Owl Carousel Assets -->
-    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+	<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+	<script src="/js/jquery.min.js"></script>
 
 	<!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" type="text/css" href="css/global.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/global.css" />
 
 	<!-- GOOGLE ANALYTICS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -57,60 +68,53 @@ AARON.FAUCHER@GMAIL.COM
 	</script>
 
 </head>
-<body id="p001" style="display:none">
 
-<!-- MENU
+<!-- BODY
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<!-- <div class="fixed-menu" style="position:fixed;">MENU</div> /-->
+<body id="p001">
 
-<!-- FULLPAGE.JS ELEMENT
+<!-- NAV
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div id="fullpage">
-
-<!-- FRAME 1 - PHILOSOPHY
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="intro" class="section" data-hex="#686868">
-
-	<div class="container frame">
-
-		<header class="row">
-
-			<h2 class="col-xs-4">Philosophy</h2>
-
-			<!-- PRE NAV
-			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-			<div class="prenav" style="display: none">
-
+<nav>
+	<div class="container">
+		<div class="row">
+			<a href="#" id="wordmark">Aaron Faucher</a>
+			<div class="prenav">
 				<div id="nav-icon">
 				  <span></span>
 				  <span></span>
 				  <span></span>
 				  <span></span>
 				</div>
-
 			</div>
-
-		</header>
-
-		<!-- NAVIGATION
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-		<nav style="display:none;">
-
-		</nav>
-
-		<!-- CONTENT
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-		<div class="row statement">
-
-			<div class="col-xs-4 col-md-2">
-
-				<p>Machines influence our behavior and decisions. What if they could motivate us towards our highest ideals?</p>
-
-				<p><a href="about.html">Aaron Faucher</a> is a UX/UI designer focused on the emerging platforms of augmented and virtual reality.</p>
-		
+		</div>
+		<div class="row">
+			<div class="menu">
+				<a href="index.html" class="col-xs-12">Work <i class="fas fa-caret-right"></i></a>
+				<a href="https://medium.com/@afauch" target="_blank" class="col-xs-12">Writing <i class="fas fa-caret-right"></i></a>
+				<a href="mailto:aaron.faucher@gmail.com" target="_blank" class="col-xs-12">Email me <i class="fas fa-caret-right"></i></a>
 			</div>
+		</div>
+	</div>	
+</nav>
+
+<!-- SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<section id="about">
+
+	<div class="container">
+
+		<div class="row">
+
+			<aside class="col-xs-12 col-md-8">
+
+				<h2>
+					<span class="line">I’m a product</span>
+					<span class="line">designer bringing</span>
+					<span class="line"><span class="highlight">mixed reality</span> to life.</span>
+				</h2>
+
+			</aside>
 
 		</div>
 
@@ -118,251 +122,96 @@ AARON.FAUCHER@GMAIL.COM
 
 </section>
 
-<!-- FRAME 2 - DISCIPLINES
+<!-- WORK
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="disciplines" class="section" data-hex="#686868">
-	
-	<div class="container frame content-1">
+<section id="work">
 
-		<header class="row">
+	<!-- ALL -->
 
-			<h2 class="col-xs-4 col-md-2">Disciplines</h2>
-
-		</header>
-
-		<ul class="row disciplines-carousel owl-carousel owl-theme">
-
-			<li class="item">
-				<h3>UX Design</h3>
-				<p>I build and improve digital products through user research, interaction design, rapid prototyping, and usability testing. My applied experience in <a href="http://www.designkit.org/human-centered-design" target="_blank">Human-Centered Design</a> and <a href="http://www.gv.com/sprint/" target="_blank">GV Design Sprints</a> help me fit business constraints while delivering user-driven results.</p>
-				<!--<a href="#">See More</a>-->
-			</li>
-
-			<li class="item">
-				<h3>UI Design</h3>
-				<p>Web and mobile interface design must carefully balance visual design trends, brand identity, and user perspectives. I lead stakeholders through a comparative process that considers several aesthetic possibilities before converging on pixel-perfect mockups.</p>
-				<!--<a href="#">See More</a>-->
-			</li>
-
-			<li class="item">
-			<h3>AR/VR</h3>
-				<p>Our screen-based interactions with the digital world will soon be obsolete. Through writing, teaching, prototyping, and application development, I seek to define interaction patterns that promote a balanced relationship between human and technology.</p>
-				<!--<a href="#">See More</a>-->
-			</li>
-
-		</ul>
-
-	</div>
-
-</section>
-
-<!-- FRAME 3 - NEW - PROJECTS
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="projects" class="section" data-hex="#686868">
-
-	<div class="container frame content-2">
-
-		<header class="row">
+	<div class="container">
 		
-			<h2 class="col-xs-2">Projects</h2>
+		<div class="row">
 
-			<ul class="col-xs-2 categories">
-				<li data-filter="featured" class="selected">Featured</li>
-				<li data-filter="ux">UX Design</li>
-				<li data-filter="ui">UI Design</li>
-				<li data-filter="arvr">AR/VR</li>
-			</ul>
-
-		</header>
-
-		<!-- PROJECTS LIST
-		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-		<!-- Row 1 -->
-		<ul class="row">
-
-			<!-- 1 -->
-			<a href="/projects/pulseband">
-				<li data-name="pulseband" class="col-xs-2 col-md-1 project project-featured project-ux">
-					<img class="line-art" src="projects/pulseband/line-art.png" />
-					<h4>Pulseband</h4>
-					<h5>UX Design</h5>
-				</li>
-			</a>
-
-
-			<!-- 2 -->
-			<a href="/projects/arvr">
-				<li data-name="arvr" class="col-xs-2 col-md-1 project project-featured project-ux project-ui project-arvr">
-					<img class="line-art" src="projects/arvr/line-art.png" />
-					<h4>UX/UI for AR/VR</h4>
-					<h5>AR/VR</h5>
-				</li>			
-			</a>
-
-			<!-- 3 -->
-			<a href="/projects/spoter">
-				<li data-name="spoter" class="col-xs-2 col-md-1 project project-featured project-ui">
-					<img class="line-art" src="projects/spoter/line-art.png" />
-					<h4>Spoter</h4>
-					<h5>UI Design</h5>
-				</li>
-			</a>
-
-
-			<!-- 4 -->
-			<a href="/projects/garden">
-				<li data-name="garden" class="col-xs-2 col-md-1 project project-featured project-arvr">
-					<img class="line-art" src="projects/garden/line-art.png" />
-					<h4>Garden</h4>
-					<h5>AR/VR</h5>
-				</li>	
-			</a>		
-
-
-
-		<!-- Row 2 -- >
-
-			<!-- 5 -->
-			<a href="/projects/goodmorning">
-				<li data-name="goodmorning" class="col-xs-2 col-md-1 project project-featured project-arvr">
-					<img class="line-art" src="projects/goodmorning/line-art.png" />
-					<h4>Good Morning</h4>
-					<h5>AR/VR</h5>
-				</li>	
-			</a>		
-
-			<!-- 6 -->
-			<a href="/projects/wit3d">
-				<li data-name="wit3d" class="col-xs-2 col-md-1 project project-featured project-arvr project-ui">
-					<img class="line-art" src="projects/wit3d/line-art.png" />
-					<h4>Wit3D</h4>
-					<h5>AR/VR</h5>
-				</li>
-			</a>
-
-			<!-- 7 -->
-			<a href="/projects/bindo">
-				<li data-name="bindo" class="col-xs-2 col-md-1 project project-featured project-ux">
-					<img class="line-art" src="projects/bindo/line-art.png" />
-					<h4>Bindo</h4>
-					<h5>Design Research</h5>
-				</li>
-			</a>
-
-			<!-- 8 -->
-			<a href="/projects/zeropercent">
-				<li data-name="zeropercent" class="col-xs-2 col-md-1 project project-featured project-ux">
-					<img class="line-art" src="projects/zeropercent/line-art.png" />
-					<h4>Zero Percent</h4>
-					<h5>UX Design</h5>
-				</li>
-			</a>
-		
-		<!-- Row 3 -->
-
-		<!-- 9 -- (HIDDEN) -->
-		<a href="/projects/ifarm">
-			<li data-name="ifarm" class="col-xs-2 col-md-1 project project-impact" style="display:none;">
-				<img class="line-art" src="projects/ifarm/line-art.png" />
-				<h4>IFARM</h4>
-				<h5>Community Development</h5>
-			</li>
-		</a>
-	
-
-		<!-- 10 (HIDDEN) -->
-		<a href="/projects/urbanprep">
-			<li data-name="urbanprep" class="col-xs-2 col-md-1 project project-impact" style="display:none;">
-				<img class="line-art" src="projects/urbanprep/line-art.png" />
-				<h4>Urban Prep</h4>
-				<h5>Education Design</h5>
-			</li>
-		</a>
-
-		<!-- 11 (HIDDEN) -->
-		<a href="/projects/echoes">
-			<li data-name="echoes" class="col-xs-2 col-md-1 project project-art" style="display:none;">
-				<img class="line-art" src="projects/echoes/line-art.png" />
-				<h4>Echoes</h4>
-				<h5>Performance Art</h5>
-			</li>
-		</a>
-
-		</ul>
-
-	</div>
-
-</section>
-
-
-<!-- FRAME 4 - CONTACT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-<section id="contact" class="section" data-hex="#686868">
-
-	<div class="container frame content-3">
-
-		<header class="row">
-
-			<h2 class="col-xs-4 col-md-2">Contact</h2>
-
-			<!-- TO TOP
-			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-			<div class="totop" style="display: none">
-
-				<div id="top-icon">
-				  <span></span>
-				  <span></span>
+			<a href="https://highfidelity.com/marketplace/items/620b29d7-c51a-4070-b20c-c0c1e29bb342" target="_blank" class="project">
+				<div class="col-xs-12 col-md-7">
+					<img class="thumb" src="projects/highfidelity/mockup-1.png" />
 				</div>
+				<div class="col-xs-12 col-md-5">
+					<h3>High Fidelity<i class="fas fa-caret-right"></i></h3>
+					<h2><span>Designing collaborative creation tools for social VR.</span></h2>
+					<div class="tags">
+						<span>HTC Vive</span>
+						<span>Oculus Rift</span>
+						<span>Product Design</span>
+						<span>UX Research</span>
+						<span>Unity / C#</span>
+						<span>Interaction Design</span>
+					</div>
+				</div>
+			</a>
 
-			</div>	
+		</div>
 
-		</header>
-		
-		<ul class="row contact-carousel owl-carousel owl-theme">
+		<div class="row">	
 
-			<li class="item">
-				<h3>Contact Information</h3>
-				<p>+1 978 424 1590<br/>
-				<a href="mailto:aaron.faucher@gmail.com" target="_blank">aaron.faucher@gmail.com</a></p>
-				<p>I'm currently available for new part- and full-time project opportunities.</p>
-				<p>You can view my resume <a href="FaucherResume.pdf" target="_blank">here</a>.</p>
-			</li>
+			<a href="https://drive.google.com/open?id=1sO2OoC-6id5SPwBXB-rlbZ0sW-oY89t_" target="_blank" class="project">
+				<div class="col-xs-12 col-md-7 col-md-push-5">
+					<img class="thumb" src="projects/socialar/mockup-1.png" />
+				</div>
+					<div class="col-xs-12 col-md-5 col-md-pull-7">				
+					<h3>Carnegie Mellon University<i class="fas fa-caret-right"></i></h3>
+					<h2><span>Augmenting the professional networking experience.</span></h2>
+					<div class="tags">
+						<span>HoloLens</span>
+						<span>Product Design</span>
+						<span>UX Research</span>
+						<span>Interaction Design</span>					
+					</div>
+				</div>
+			</a>
 
-			<li class="item">
-				<h3>Recent Writing</h3>
-				<ul>
-					<li><a href="http://blog.proto.io/3-steps-towards-designing-arvr/" target="_blank">3 Steps Towards Designing AR/VR</a></li>
-					<li><a href="http://designation.io/blog/animating-microinteractions-maya/" target="_blank">AR/VR Microinteractions in Maya</a></li>
-					<li><a href="http://designation.io/blog/interview-with-alex-colgan-leap-motion/" target="_blank">Interview – Alex Colgan</a></li>
-					<li><a href="http://designation.io/blog/tools-of-the-trade-applications-for-arvr-design/" target="_blank">Tools of the Trade – AR/VR Design</a></li>
-					<li><a href="http://designation.io/blog/arvr/" target="_blank">UX/UI and AR/VR</a></li>
-				</ul>
-			</li>
+		</div>
+		<div class="row">
 
-			<li class="item">
-				<h3>Recent Events</h3>
-				<ul>
-					<li><a href="https://www.eventbrite.com/e/arvr-ui-hackathon-tickets-22509511555" target="_blank">AR/VR UI Hackathon</a></li>
-					<li><a href="https://www.eventbrite.com/e/unity-basics-tickets-21393756301" target="_blank">Unity Basics</a></li>
-					<li><a href="https://www.eventbrite.com/e/object-based-ui-tickets-20719859658" target="_blank">Object-Based UI</a></li>
-					<li><a href="https://www.eventbrite.com/e/uxui-for-arvr-tickets-19055457386" target="_blank">UX/UI for AR/VR</a></li>
-					<li><a href="http://www.eventbrite.com/e/uxui-for-augmented-reality-tickets-17679798754" target="_blank">UX/UI for Augmented Reality</a></li>
-				</ul>
-			</li>
+			<a href="https://www.behance.net/gallery/46198309/TCPA" target="_blank" class="project">
+				<div class="col-xs-12 col-md-7">
+					<img class="thumb col-xs-12 col-md-8" src="projects/tcpa/mockup-1.png" />
+				</div>
+				<div class="col-xs-12 col-md-5">								
+					<h3>TCPA<i class="fas fa-caret-right"></i></h3>
+					<h2><span>Enhancing the member experience for TCPA.</span></h2>
+					<div class="tags">
+						<span>Web</span>					
+						<span>Information Architecture</span>
+						<span>UX Design</span>					
+						<span>Visual Design</span>	
+					</div>
+				</div>
+			</a>
 
-			<li class="item">
-				<h3>Links</h3>
-				<ul>
-					<li>Read my thoughts on <a href="http://medium.com/@f0sh_" target="_blank">Medium</a></li>
-					<li>See what I'm tinkering with on <a href="http://afaucher.tumblr.com" target="_blank">Tumblr</a></li>
-					<li>Let's build together on <a href="https://github.com/afauch/" target="_blank">Github</a></li>
-					<li>Connect on <a href="https://www.linkedin.com/in/aaronfaucher" target="_blank">LinkedIn</a></li>				
-				</ul>
-			</li>
+		</div>
 
-		</ul>
+	</div>	
+
+</section>
+
+<!-- CONTACT
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<section id="contact">
+
+	<div class="container">
+
+		<div class="row">
+
+			<a href="https://www.linkedin.com/in/aaronfaucher/" target="_blank" class="col-xs-12" id="resume">
+				See my resume <i class="fas fa-caret-right"></i>
+			</a>
+
+			<a href="mailto:aaron.faucher@gmail.com" target="_blank" class="col-xs-12" id="email">
+				Get in touch <i class="fas fa-caret-right"></i>
+			</a>
+
+		</div>
 
 	</div>
 
@@ -370,37 +219,21 @@ AARON.FAUCHER@GMAIL.COM
 
 <!-- FOOTER
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<footer>
 
+<footer>
+	<div class="container">
+		<div class="row">
+			<div id="copyright" class="col-xs-12">
+				<span id="copyright-text">© 2018</span><span class="rule"></span>
+			</div>
+		</div>
+	</div>
 </footer>
 
-<!-- END FULLPAGE.JS ELEMENT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</div>
 
 <!-- SCRIPTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script type="text/javascript" src="js/script.min.js"></script>
-<!-- OWL -->
-<script src="owl-carousel/owl.carousel.js"></script>
-<script>
-   $(document).ready(function($) {
-      $(".disciplines-carousel").owlCarousel({
-
-      	items: 4,
-      	autoHeight: false
-
-      });
-
-      $(".contact-carousel").owlCarousel({
-
-      	items: 4,
-      	autoHeight: false
-
-      });
-
-    });
-</script>
+<script src="/js/script.js"></script>
 
 </body>
 </html>
