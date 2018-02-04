@@ -1,3 +1,5 @@
 # afauch.github.io
 
-Aaron Faucher | UX/UI Design
+Aaron Faucher | Product Design
+
+# 7DAY - 1
