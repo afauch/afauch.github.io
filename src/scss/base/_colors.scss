@@ -1,0 +1,47 @@
+/*––––––––––––––––––––––––––––––
+_COLORS.SCSS
+
+Basic color styles to be used
+consistently across the site.
+
+–––––––––––––––––––––––––––––––*/
+
+/*––––––––––––––––––––––––––––––
+BACKGROUND
+–––––––––––––––––––––––––––––––*/
+body {
+	background-color: $pri-background-light;
+}
+
+body {
+	color: $pri-color-light;
+}
+
+section a,
+section a:link,
+section a:visited {
+	display: inline-block;
+	transform: translate(0px, 0px);
+	position: relative;
+	text-decoration: none;
+	color: $pri-color-light;
+	transition: all $link-time $link-easing;	
+}
+
+section a:hover{
+	transform: translate(0px, -1px);
+	color: $pri-color-light;	
+	text-decoration: none;
+	z-index: 1;
+	transition: all $link-time $link-easing;	
+}
+
+section a:before {
+	@include linkline;
+}
+
+section a:hover:before {
+	bottom: 1px;
+	border-color: $link-dec-color-hover;
+	transition: all $link-time $link-easing; 	
+}

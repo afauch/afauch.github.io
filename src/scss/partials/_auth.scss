@@ -1,0 +1,88 @@
+#auth {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: $pri-background-light;
+	z-index: 100;
+
+}
+
+#auth form {
+	margin-top: 192px;
+	position: relative;
+}
+
+#aut input {
+	margin-bottom: 12px;
+}
+
+#auth input:focus {
+	outline: none;
+}
+
+#auth input#pwd {
+	
+	font-size: 24px;
+	background-color: transparent;
+	border: none;
+	border-bottom: solid 1px $line-color-light;
+
+}
+
+#auth input#submit {
+
+	margin-top: 12px;
+	margin-bottom: 32px;
+	background-color: transparent;
+	border: none;
+	border-radius: $border-radius;
+	background-color: $rollover-highlight;
+	box-shadow: 0 2px 4px $shadow-color-light;	
+	transform: translate(0px, 0px);
+	transition: all $rollover-time $rollover-easing;
+}
+
+#auth input#submit:hover {
+	transform: translate(0px, -2px);
+	transition: all $rollover-time $rollover-easing;	
+}
+
+#auth h3 {
+	margin-bottom: 8px;
+}
+
+#auth p {
+	@include bigger;
+}
+
+#auth p a,
+#auth p a:link,
+#auth p a:visited {
+	display: inline-block;
+	transform: translate(0px, 0px);
+	position: relative;
+	text-decoration: none;
+	color: $pri-color-light;
+	transition: all $link-time $link-easing;	
+}
+
+#auth p a:hover{
+	transform: translate(0px, -1px);
+	color: $pri-color-light;	
+	text-decoration: none;
+	z-index: 1;
+	transition: all $link-time $link-easing;	
+}
+
+#auth p a:before {
+	@include linkline;
+}
+
+#auth p a:hover:before {
+	bottom: 1px;
+	border-color: $link-dec-color-hover;
+	transition: all $link-time $link-easing; 	
+}

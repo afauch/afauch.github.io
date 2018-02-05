@@ -1,0 +1,18 @@
+/*––––––––––––––––––––––––––––––
+_GARDEN.SCSS
+
+Specific styling for Pulseband
+case study
+
+.p004
+
+–––––––––––––––––––––––––––––––*/
+
+#p004 section#premise .row li {
+	border-top: solid $line-width $line-color;
+}
+
+#p004 #uses header img {
+	height: 92px;
+	width: auto;
+}

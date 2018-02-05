@@ -1,0 +1,481 @@
+/*––––––––––––––––––––––––––––––
+_INDEX.SCSS
+
+Specific styles for the INDEX.HTML page
+
+–––––––––––––––––––––––––––––––*/
+
+/*––––––––––––––––––––––––––––––
+INTRO
+
+All styles under here pertain
+to the INTRO frame.
+
+–––––––––––––––––––––––––––––––*/
+
+
+#p001 h1 {
+	display: block;
+	font-weight: $regular;
+	padding: 0;
+	position: relative;
+	top: 0;
+	// margin-top: 286px;
+	height: auto;
+	@media (min-width: $break-md){
+		font-size: 42px;
+		line-height: 42px;	
+		top: 0;	
+		// margin-top: 286px;		
+	}
+}
+
+#p001 h2 {
+	height: auto;
+	padding: 0;
+	margin: 0;	
+	display: block;
+	font-weight: $regular;
+	@media (min-width: $break-md){
+		font-size: 24px;
+		line-height: 24px;
+	}	
+}
+
+#p001 #intro h3,
+#p001 #about h3,
+#p001 #blog h3,
+#p001 #contact h3 {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 8px;	
+	@media (min-width: $break-md){
+		margin-bottom: 8px;
+	}
+}
+
+#p001 h4 {
+	@include cap;
+}
+
+/*––––––––––––––––––––––––––––––
+INTRO
+–––––––––––––––––––––––––––––––*/
+
+#p001 #intro {
+
+	height: 100vh;
+	
+}
+
+#p001 #intro .container .row div {
+	position: relative;
+	top: 286px;
+	text-align: right;
+}
+
+#p001 #intro img {
+	width: 226px;
+	display: block;
+	position: relative;
+	top: 0;
+	right: 0;	
+	@media (min-width: $break-md){
+		position: absolute;
+		top: -72px;
+		right: -20px;
+	}		
+}
+
+#p001 #intro span {
+	@include cap;
+}
+
+
+#p001 #intro ul {
+	position: relative;
+	top: 246px;	
+	text-align: left;
+	@include bigger;
+	@media (min-width: $break-md){
+		top: 246px;
+	}	
+}
+
+/*––––––––––––––––––––––––––––––
+ABOUT
+–––––––––––––––––––––––––––––––*/
+
+#p001 #about {
+	position: relative;
+	height: auto;
+	@media (min-width: $break-md){
+		// top: -198px;
+		height: 460px;
+	}
+}
+
+#p001 #about h2:before {
+	@include hangline;
+}
+
+#p001 #about aside {
+	@media (min-width: $break-md){
+		top: 96px;
+	}
+}
+
+#p001 #about h2 {
+	// height: auto;
+	margin-bottom: 14px;
+	@media (min-width: $break-md){
+		padding: 26px 0 0 0;
+		margin-bottom: 20px;
+	}
+}
+
+#p001 #about p,
+#p001 #about a {
+	@include bigger;
+}
+
+/*––––––––––––––––––––––––––––––
+WORK
+–––––––––––––––––––––––––––––––*/
+
+#p001 #work {
+	height: auto;
+}
+
+#p001 #work a {
+	position: relative;
+	border-radius: $border-radius;
+	top: 0;
+	right: 0;
+	height: auto;
+	@media (min-width: $break-md){
+		padding: 10px 10px 10px 10px;
+		top: 201px;
+		right: 0px;
+	}	
+}
+
+.lock {
+	position: relative;
+	top: -1px;
+	width: 8px;
+	height: auto;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#p001 #work h3 {
+	@media (min-width: $break-md){
+		margin-bottom: 8px;
+	}
+}
+
+#p001 #work a h2 {
+	display: block;
+	position: relative;
+	top: 0px;
+	@media (min-width: $break-md){
+		margin-bottom: 10px;
+	}
+	transition: all $link-time $link-easing;		
+}
+
+// TODO: CLEANUP NEEDED ON LINK TREATMENT!
+
+#p001 #work a:hover h2 {
+	position: relative;
+	// top: 0px;
+	transition: all $link-time $link-easing;		
+}
+
+#p001 #work a h2 span {
+	display: inline;
+}
+
+#p001 #work a h2 span {
+	@include linkline-img;
+}
+
+#p001 #work a {
+	display: block;
+	transform: translate(0px, 0px);
+	transition: all $link-time $link-easing;
+}
+
+#p001 #work a:hover h2 span {
+	// padding-bottom: 2px;
+	background-image: url("/img/underline-hover.png?");
+	background-position: bottom;
+	background-repeat: repeat-x;
+	transition: all $link-time $link-easing;	
+}
+
+#p001 #work a:before,
+#p001 #work a:hover:before {
+	border: none; // override the normal "a" formatting
+}
+
+#p001 #work .right a {
+	text-align: right;
+}
+
+#p001 #work .left a {
+	text-align: left;
+}
+
+#p001 #work a:hover {
+	background-color: $rollover-highlight;
+	// top: -2px;
+	transform: translate(0px, -2px);
+	transition: all $link-time $link-easing;	
+	@include boxshadow;
+	@media (min-width: $break-md){
+		top: 199px;	
+	}		
+}
+
+	/*––––––––––––––––––––––––––––––
+	FEATURED-PROJECTS
+	–––––––––––––––––––––––––––––––*/
+	
+	#p001 #work .featured-projects .project {
+		position: relative;
+		height: 100vh;
+	}
+
+	#p001 #work .featured-projects .project img.full {
+		width: 100%;
+		position: relative;
+		@media (min-width: $break-md){
+		    position: absolute;
+		    z-index: -1;
+		}
+	}
+
+	// TCPA
+	#p001 #work .featured-projects .project:nth-of-type(1) img.full {
+		@media (min-width: $break-md){
+			width: 1000px;			
+			left: -274px;
+		    top: -230px;	
+		}
+	}
+
+	// SPOTER
+	#p001 #work .featured-projects .project:nth-of-type(2) img.full {
+		@media (min-width: $break-md){
+			width: 800px;			
+		    left: 220px;
+		    top: -130px;
+		}
+	}
+
+	// EMBODIED
+	#p001 #work .featured-projects .project:nth-of-type(3) img.full {
+		@media (min-width: $break-md){
+			width: 1000px;			
+			left: -274px;
+		    top: -230px;	
+		}
+	}
+
+	// JIBO
+	#p001 #work .featured-projects .project:nth-of-type(4) img.full {
+		@media (min-width: $break-md){
+			width: 800px;			
+		    left: 220px;
+		    top: -130px;	
+		}
+	}
+
+
+	/*––––––––––––––––––––––––––––––
+	ALL-PROJECTS
+	–––––––––––––––––––––––––––––––*/
+	
+	#p001 #work #expand {
+		text-align: center;
+	}
+
+
+	#p001 #work #expand a {
+		top: 0;
+	}
+
+	#p001 #work #expand a:hover {
+		top: -2px;
+		cursor: pointer;
+	}
+
+	#p001 #work #expand a span {
+		@include linkline-img;
+		display: inline-block;
+		padding-bottom: 3px;
+		margin-bottom: 11px;	
+	}
+
+	#p001 #work #expand img {
+		display: block;
+		position: relative;
+		left: 50%;
+		@media (min-width: $break-md){
+			width: 18px;
+			height: auto;
+		}
+	}
+
+	.face-up {
+		transform: translate(-50%,0) rotate(180deg);
+	}
+
+	.face-down {
+		transform: translate(-50%,0);
+	}
+
+	#p001 #work #all-projects {
+		// display: none;
+	}
+
+	#p001 #work #all-projects .project {
+		margin-bottom: 70px;
+	}
+
+	#p001 #work #all-projects .project img.thumb {
+		width: 100%;
+		margin-bottom: 32px;
+	}
+
+	#p001 #work #all-projects a {
+		position: relative;
+		top: 0;
+		transition: all $link-time $link-easing;	
+	}
+
+	#p001 #work #all-projects a:hover {
+		position: relative;
+		top: -2px;
+		transition: all $link-time $link-easing;			
+	}
+
+	#p001 #work #all-projects a h2 {
+		@media (min-width: $break-md){
+			@include bigger;
+			line-height: 19px;	
+		}	
+	}
+
+	#p001 #work #all-projects a h2 span {
+		background-image: none;
+	}
+
+/*––––––––––––––––––––––––––––––
+BLOG
+–––––––––––––––––––––––––––––––*/
+
+#p001 #blog {
+	height: 100vh;
+}
+
+#p001 #blog div.row {
+	position: relative;
+	top: 201px;
+	margin-bottom: 62px;
+}
+
+#p001 #blog aside h2:before {
+	@include hangline;
+}
+
+#p001 #blog aside h2 {	
+	@media (min-width: $break-md){
+		padding: 26px 0 0 0;
+		margin-bottom: 20px;
+	}
+}
+
+#p001 #blog aside p,
+#p001 #blog h3 {
+	@include bigger;
+}
+
+#p001 #blog h4 {
+	margin-bottom: 8px;
+}
+
+// override normal 'a' formatting
+#p001 #blog a:before {
+	background-image: none;
+	border-bottom: none;
+}
+
+#p001 #blog a .preview {
+	position: relative;
+	top: 2px;
+	height: 38px;
+	border-radius: $border-radius;
+	margin-bottom: 20px;
+	background-image: url('../img/blog/sample.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#p001 #blog a,
+#p001 #blog a:link,
+#p001 #blog a:visited {
+	text-decoration: none;
+	position: relative;
+	border-radius: $border-radius;
+	top: -9px;
+	padding: 10px;
+	transition: all $link-time $link-easing;		
+}
+
+#p001 #blog a:hover {
+	text-decoration: none;
+	background-color: $rollover-highlight;
+	box-shadow: 0 2px 4px $shadow-color-light;
+	transition: all $link-time $link-easing;	
+}
+
+/*––––––––––––––––––––––––––––––
+CONTACT
+–––––––––––––––––––––––––––––––*/
+
+#p001 #contact {
+	height: 100vh;
+}
+
+#p001 #contact .row {
+	position: relative;
+	top: 201px;
+	border-top: solid $line-width $line-color-light;
+}
+
+#p001 #contact aside {
+	position: relative;
+	top: 30px;
+}
+
+#p001 #contact .row div {
+	position: relative;
+	top: 88px;
+}
+
+#p001 #contact aside p,
+#p001 #contact aside span {
+	@include bigger;
+}
+
+#p001 #contact h2 {
+	margin-bottom: 20px;
+}
+
+#p001 #contact h3 {
+	margin-bottom: 20px;
+}
+

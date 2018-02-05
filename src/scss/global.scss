@@ -1,0 +1,99 @@
+/*––––––––––––––––––––––––––––––
+GLOBAL.SCSS
+This is a test to see how it
+goes with compiling into
+a single file using
+Grunt.
+–––––––––––––––––––––––––––––––*/
+
+
+/*––––––––––––––––––––––––––––––
+Browser reset
+–––––––––––––––––––––––––––––––*/
+@import "vendors/_normalize.scss";
+
+/*––––––––––––––––––––––––––––––
+Import Bootstrap grid
+–––––––––––––––––––––––––––––––*/
+@import "vendors/_bootstrap.scss";
+
+/*––––––––––––––––––––––––––––––
+Import 'fullpage.js' assets
+–––––––––––––––––––––––––––––––*/
+@import "vendors/_jquery.fullpage.scss";
+
+
+/*––––––––––––––––––––––––––––––
+Basic Bootstrap overrides
+–––––––––––––––––––––––––––––––*/
+// Grid modifications
+@import "vendors/vendors-extensions/_grid_mod.scss";
+// Kill UL formatting
+@import "vendors/vendors-extensions/_ul.scss";
+// Embed Responsive (from Bootsrap)
+@import "vendors/vendors-extensions/_embed-responsive.scss";
+
+/*––––––––––––––––––––––––––––––
+Import basic variables
+–––––––––––––––––––––––––––––––*/
+@import "base/_variables.scss";
+
+/*––––––––––––––––––––––––––––––
+Import base styles
+–––––––––––––––––––––––––––––––*/
+@import "base/_colors.scss";
+@import "base/_fonts.scss";
+@import "base/_spacing.scss";
+@import "base/_styling.scss";
+@import "base/_microinteractions.scss";
+
+/*––––––––––––––––––––––––––––––
+Import partial modules
+–––––––––––––––––––––––––––––––*/
+//Home page
+@import "partials/_index.scss";
+//Navigation
+@import "partials/_nav.scss";
+//About page
+@import "partials/_about.scss";
+//General case study styling
+@import "partials/_projects.scss";
+//Auth page
+@import "partials/_auth.scss";
+
+/*––––––––––––––––––––––––––––––
+Import case study modules
+–––––––––––––––––––––––––––––––*/
+//Pulseband styling
+@import "partials/_pulseband.scss";
+//Garden styling
+@import "partials/_garden.scss";
+//UX/UI for AR/VR styling
+@import "partials/_arvr.scss";
+//Pride & Joy styling
+@import "partials/_prdnjy.scss";
+//Bindo styling
+@import "partials/bindo.scss";
+//St. Francis styling
+@import "partials/_stfrancis.scss";
+//Echoes styling
+@import "partials/_echoes.scss";
+//Good Morning styling
+@import "partials/_goodmorning.scss";
+//Spoter styling
+@import "partials/_spoter.scss";
+//Urban Prep styling
+@import "partials/_urbanprep.scss";
+//Zero Percent styling
+@import "partials/_zeropercent.scss";
+//Alfred styling
+@import "partials/_alfred.scss";
+//Jibo styling
+@import "partials/_jibo.scss";
+
+/*––––––––––––––––––––––––––––––
+Import temporary tests
+–––––––––––––––––––––––––––––––*/
+//Projects frame on the homepage
+@import "base/_tests.scss";
+

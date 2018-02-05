@@ -1,0 +1,88 @@
+/*––––––––––––––––––––––––––––––
+_ZEROPERCENT.SCSS
+
+Specific styling for Pulseband
+case study
+
+.p014
+
+–––––––––––––––––––––––––––––––*/
+
+#p014 section#process img,
+{
+	max-width: 100%;
+	@media (min-width: $break-md){
+		float: right;
+		position: relative;
+		top: -60px;
+		max-height: 60vh;
+		width: auto;
+	}
+}
+
+#p014 section#comparative-analysis img {
+	max-height: 70vh;
+	max-width: 80%;
+	width:auto;	
+	@media (min-width: $break-md){
+		position: relative;
+		top: -60px;
+		float:right;
+	}
+}
+
+#p014 section#user-insights img {
+	@media (min-width: $break-md){
+		position: relative;
+		top: -60px;
+		padding: 0 60px 0 0 ;
+	}
+}
+
+#p014 section#task-model img {
+	padding: 20px 0 0 0;
+	@media (min-width: $break-md){
+		padding: 0 0 0 120px;
+	}
+}
+
+
+#p014 section#diverge-images .big-img {
+	max-width: 100%;
+	background-size:contain;
+	@media (min-width: $break-md){
+		background-size:cover;
+	}	
+}
+
+#p014 section#microinteraction img {
+	max-height:70vh;
+	@media (min-width: $break-md){
+		padding: 0 120px 0 0;
+		position: relative;
+		top: -120px;
+	}	
+}
+
+#p014 section#iteration-1 img {
+	@media (min-width: $break-md){
+		padding: 0 0 0 60px;
+		position: relative;
+		top: -30px;
+	}	
+}
+
+#p014 section#user-feedback img {
+	@media (min-width: $break-md){
+		padding: 0 60px 0 0;
+		// position: relative;
+		// top: -30px;
+	}	
+}
+
+#p014 section#results li {
+	@media (min-width: $break-md){
+		position: relative;
+		top: -60px;
+	}	
+}

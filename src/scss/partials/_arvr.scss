@@ -1,0 +1,21 @@
+/*––––––––––––––––––––––––––––––
+_ARVR.SCSS
+
+Specific styling for the
+"UX/UI for AR/VR"
+case study
+
+.p005
+
+–––––––––––––––––––––––––––––––*/
+
+#p005 #credits ul li ul {
+	min-height: 100px;
+}
+
+#p005 section#blogs li {
+	@media (min-width: $break-md){
+		position: relative;
+		top: -60px;
+	}	
+}
