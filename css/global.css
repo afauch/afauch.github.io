@@ -1,155 +1,220 @@
+/*––––––––––––––––––––––––––––––
+GLOBALS
+–––––––––––––––––––––––––––––––*/
 body
 {
-	font-family: "fira-mono", monospace;
-	font-weight: 400;
-	font-size: 24px;
-	line-height: 30px;
-	color: #FFF;
-	letter-spacing: -1px;
+	background-color: #FFF;
+	font-family: "adrianna-extended", sans-serif;
+	color: #333333;
 	text-rendering: optimizeLegibility !important;
 	   -webkit-font-smoothing: antialiased !important;
+	transition: all .1s ease-out;
+		-webkit-transition: all .1s ease-out;			   
 }
 
-
-.overlay, video
+body a,
+body a:link,
+body a:hover,
+body a:active,
+body a:visited
 {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	background-color: rgba(0,0,0,.85);
-	z-index: 100;
-}
-
-video
-{
-	width: 100vw;
-	height: auto;
-	left: 0;		
-	transform: translateX(0);		
-}
-
-#work
-{
-	position: fixed;
-	z-index: 101;
-}
-
-a,
-a:hover,
-a:visited,
-a:active
-{
-	color: #FFFC57;
 	text-decoration: none;
 }
 
-a:hover
+nav a
 {
-	background-color: #FFFC57;
-	color: #000;
+	color: #333333;
+	font-size: 18px;
+	font-weight: 600;
+	margin-left: 16px;
 }
 
-/* CONTENT */
-
-.row .holder, .row .clients, .row .about
+nav a:hover
 {
-	border-left: 4px solid rgba(255,255,255,.7);
-	padding-left: 32px;
+	color: #D8D8D8;
 }
 
-.row .about
-{
-	margin-top: -16px;
-}
-
-.row .about a
-{
-	color: #FFF;
-	opacity: .7;
-}
-
-.row .about a:hover
-{
-	background-color: #FFF;
-	color: #000;
-}
-
-h1, h2
-{
-	position: relative;
-	display: block;
-	margin: 0px;
-	line-height: 56px;
-}
-
-h1
-{
-	margin: 72px 0px -8px 0px;
-	font-family: "Vollkorn", monospace;	
-	font-weight: 700;	
-	font-size: 56px;
-}
-
-h2
-{
-	font-weight: 300;
-	font-size: 36px;
-	opacity: .7;
-}
-
-h3
-{
-	margin-bottom:-4px;
-	font-size: 24px;
-}
-
-/* CLIENTS LIST */
-
-ul
-{
-	list-style-type: none;
-	margin-top: 8px;
-	padding: 0px;
-}
-
-ul li
+nav a:nth-of-type(1)
 {
 	margin-left: 0px;
 }
 
-ul li span
+.current
 {
-	display: inline-block;
-	width: 72px;
-	opacity: .7;
+	color: #D8D8D8;
+	border-bottom: 4px solid #D8D8D8;
 }
 
-/* MEDIA QUERY */
+h1
+{
+	margin-top: 72px;
+	font-weight: 600;
+	font-size: 24px;
+}
 
-@media (max-width: 992px)
+
+/*––––––––––––––––––––––––––––––
+ABOUT
+–––––––––––––––––––––––––––––––*/
+
+p
+{
+	font-family: "anonymous", monospace;
+	font-size: 36px;
+}
+
+#about a
+{
+	color: #333333;
+	border-bottom: 3px solid #333333;
+}
+
+h2
+{
+	font-size: 48px;
+	line-height: 52px;
+}
+
+/*––––––––––––––––––––––––––––––
+WORK THUMBNAILS
+–––––––––––––––––––––––––––––––*/
+
+#work a
+{
+	margin-top: 36px;
+	padding: 72px;
+	display: block;
+	position: relative;
+	border-radius: 4px;
+	height: 300px;
+	overflow: hidden;
+	color: #FFF;
+}
+
+#work a .label
+{
+	display: none;
+	position: relative;
+	z-index: 100;
+}
+
+#work a .label .kicker
+{
+	font-size: 18px;
+	color: rgba(255,255,255,.69);
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+#work a .label h3
+{
+	font-size: 56px;
+	line-height: 60px;
+	margin: 0px;
+}
+
+#work a .label h3
+{
+	font-size: 56px;
+}
+
+#work a:hover .label
+{
+	display: block;
+}
+
+#work a .overlay
+{
+	display:none;
+	position: absolute;
+	width: 110%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	top: 0;
+	left: 0;
+	z-index: 0;			
+}
+
+#work a:hover .overlay
+{
+	display: block;
+}
+
+#work video
+{
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	z-index: -10;
+	border-radius: 4px;
+}
+
+/*––––––––––––––––––––––––––––––
+FOOTER
+–––––––––––––––––––––––––––––––*/
+
+footer #copyright
+{
+	margin-top: 72px;
+	margin-bottom: 32px;
+}
+
+footer #copyright-text
+{
+	width: 180px;
+	z-index: 100;
+}
+
+footer .rule
+{
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	display: inline-block;
+	background-color: #D8D8D8;
+	height: 2px;
+	width: calc(100% - 72px);
+	z-index: 0;
+}
+
+
+/*––––––––––––––––––––––––––––––
+MEDIA QUERY
+–––––––––––––––––––––––––––––––*/
+@media (max-width: 768px)
 {
 
-	h1
+	#work a .label .kicker
 	{
-		font-size: 32px;
-		line-height: 40px;
+		font-size: 11px;
 	}
 
-	h2
-	{
+	#work a .label h3 {
 		font-size: 24px;
-		line-height: 40px;
+		line-height: 30px;
+		}
+
+	#about h2 {
+		font-size: 24px;
+		line-height: 30px;
 	}
 
-	video
+	#about p 
 	{
-		height: 100vh;
-		width: auto;
-		z-index: 99;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	#work video
+	{
+		position: absolute;
+		top: 0;
 		left: 50%;
-		transform: translateX(-50%);	
+		width: 200%;
+		transform: translateX(-50%);
+		z-index: -10;
+		border-radius: 4px;
 	}
 
 }

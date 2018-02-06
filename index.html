@@ -32,17 +32,15 @@ AARON.FAUCHER@GMAIL.COM
 
 	<!-- BOOTSTRAP
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="/css/vendors/bootstrap.css">
+	<link rel="stylesheet" href="/css/vendors/_bootstrap.css">
 
 	<!-- RESET
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="/css/vendors/normalize.css">	
+	<link rel="stylesheet" href="/css/vendors/_normalize.css">	
 
 	<!-- ADOBE TYPEKIT
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="https://use.typekit.net/hpu4tuq.css">
-	<link href="https://fonts.googleapis.com/css?family=Vollkorn:700" rel="stylesheet">
-
+	<link rel="stylesheet" href="https://use.typekit.net/dru4joo.css">
 
 	<!-- FONT AWESOME
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -50,7 +48,6 @@ AARON.FAUCHER@GMAIL.COM
 
 	<!-- JQUERY
 	––––––––––––––––––––––––––––––––––––––––––––––––––  --> 
-	<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
 	<script src="/js/jquery.min.js"></script>
 
 	<!-- CSS
@@ -75,91 +72,79 @@ AARON.FAUCHER@GMAIL.COM
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <body id="p001">
 
-<!-- VIDEO
+<!-- NAV
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-<video autoplay="autoplay" loop="loop"/>
-	<source type="video/mp4" src="reel.mp4"/>
-	<img src="reel.png"/>
-</video>
-
-<div class="overlay"></div>
-
+<nav>
+	<div class="container">
+		<div class="row">
+			<h1>AARON FAUCHER</h1>
+		</div>
+		<div class="row">
+			<div class="menu">
+				<a href="index.html" class="current">WORK</a>
+				<a href="about.html">ABOUT</a>
+			</div>
+		</div>
+	</div>	
+</nav>
 
 <!-- WORK
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <section id="work">
 
-	<div class="container">
-
-		<div class="row">
-
 	<!-- ALL -->
 
-			<div class="col-xs-12">
-				<div class="holder">
-					<h1><span>Aaron Faucher</span></h1>
-					<h2><span>AR/VR Product Design</span></h2>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="row">
-
-			<div class="clients">
-
-				<h3>Recent Projects</h3>
-				
-				<ul>
-					<li><span class="yr">2018</span><a href="https://www.hcii.cmu.edu/" target="_blank">Carnegie Mellon</a></li>			
-					<li><span class="yr">2017</span><a href="https://highfidelity.com/" target="_blank">High Fidelity</a></li>
-					<li><span class="yr">2017</span><a href="https://www.wrld3d.com/" target="_blank">WRLD</a></li>
-					<li><span class="yr">2017</span><a href="http://alphacomputing.io" target="_blank">Alpha Computing</a></li>
-					<li><span class="yr">2016</span><a href="http://www.embodiedlabs.com" target="_blank">Embodied Labs</a></li>
-				</ul>							
-
-			</div>
-
-		</div>
-
-		<div class="row">
-
-			<div class="about">
-				
-				<ul>
-					<li><a href="https://www.linkedin.com/in/aaronfaucher/" target="_blank">LinkedIn</a></li>
-					<li><a href="https://medium.com/@afauch" target="_blank">Medium</a></li>
-					<li><a href="http://github.com/afauch" target="_blank">Github</a></li>
-				</ul>							
-
-			</div>
-
-		</div>		
-
-	</div>
-
-</section>
-
-<!-- CONTACT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="contact">
-
 	<div class="container">
-
+		
 		<div class="row">
 
-			<a href="https://www.linkedin.com/in/aaronfaucher/" target="_blank" class="col-xs-12" id="resume">
-				See my resume <i class="fas fa-caret-right"></i>
+			<a class="col-xs-12" href="https://drive.google.com/file/d/1sO2OoC-6id5SPwBXB-rlbZ0sW-oY89t_/view" target="_blank">
+				<div class="label">
+					<span class="kicker">Carnegie Mellon</span>
+					<h3>A HoloLens app for professional networking.</h3>
+				</div>
+				<div class="overlay"></div>				
+				<video autoplay="autoplay" loop="loop"/>
+					<source type="video/mp4" src="vid/socialar-thumb.mp4"/>
+				</video>	
 			</a>
 
-			<a href="mailto:aaron.faucher@gmail.com" target="_blank" class="col-xs-12" id="email">
-				Get in touch <i class="fas fa-caret-right"></i>
+			<a class="col-xs-12" href="http://highfidelity.com" target="_blank">
+				<div class="label">				
+					<span class="kicker">High Fidelity</span>
+					<h3>A VR tool for collaborative creativity.</h3>
+				</div>
+				<div class="overlay"></div>							
+				<video autoplay="autoplay" loop="loop"/>
+					<source type="video/mp4" src="vid/highfidelity-thumb.mp4"/>
+				</video>					
 			</a>
+
+			<a class="col-xs-12" href="http://alphacomputing.io" target="_blank">
+				<div class="label">				
+					<span class="kicker">Alpha Computing</span>
+					<h3>A VR demo to read biometric emotion.</h3>
+				</div>
+				<div class="overlay"></div>							
+				<video autoplay="autoplay" loop="loop"/>
+					<source type="video/mp4" src="vid/alphacomputing-thumb.mp4"/>
+				</video>					
+			</a>
+
+			<a class="col-xs-12" href="http://afaucher.me/crayon-page/" target="_blank">
+				<div class="label">				
+					<span class="kicker">Crayon</span>
+					<h3>A C# toolkit for VR UI design.</h3>
+				</div>
+				<div class="overlay"></div>							
+				<video autoplay="autoplay" loop="loop"/>
+					<source type="video/mp4" src="vid/crayon-thumb.mp4"/>
+				</video>					
+			</a>			
 
 		</div>
 
-	</div>
+	</div>	
 
 </section>
 
