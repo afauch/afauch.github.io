@@ -4,12 +4,13 @@ GLOBALS
 body
 {
 	background-color: #FFF;
-	font-family: "adrianna-extended", sans-serif;
+	font-family: "din-2014", sans-serif;
 	color: #333333;
 	text-rendering: optimizeLegibility !important;
 	   -webkit-font-smoothing: antialiased !important;
 	transition: all .1s ease-out;
-		-webkit-transition: all .1s ease-out;			   
+		-webkit-transition: all .1s ease-out;	
+	padding-top: 102px;		   
 }
 
 body a,
@@ -18,6 +19,7 @@ body a:hover,
 body a:active,
 body a:visited
 {
+	color: #FF6000;
 	text-decoration: none;
 }
 
@@ -52,15 +54,10 @@ h1
 	font-size: 24px;
 }
 
-
-/*––––––––––––––––––––––––––––––
-ABOUT
-–––––––––––––––––––––––––––––––*/
-
 p
 {
-	font-family: "anonymous", monospace;
-	font-size: 36px;
+	font-family: "din-2014", monospace;
+	font-size: 24px;
 }
 
 #about a
@@ -71,34 +68,53 @@ p
 
 h2
 {
-	font-size: 48px;
-	line-height: 52px;
+	font-size: 18px;
+}
+
+#p001 a
+{
+	display: block;
+	font-size: 16px;
+	line-height: 28px;
 }
 
 /*––––––––––––––––––––––––––––––
 WORK THUMBNAILS
 –––––––––––––––––––––––––––––––*/
 
-#work a
+.back svg
+{
+	margin-right: 8px;
+}
+
+a.back
+{
+	color: #333333 !important;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 20px;
+}
+
+div.vid
 {
 	margin-top: 36px;
 	padding: 72px;
 	display: block;
 	position: relative;
 	border-radius: 4px;
-	height: 300px;
+	height: 500px;
 	overflow: hidden;
 	color: #FFF;
 }
 
-#work a .label
+div.vid .label
 {
 	display: none;
 	position: relative;
 	z-index: 100;
 }
 
-#work a .label .kicker
+div.vid .label .kicker
 {
 	font-size: 18px;
 	color: rgba(255,255,255,.69);
@@ -106,44 +122,45 @@ WORK THUMBNAILS
 	text-transform: uppercase;
 }
 
-#work a .label h3
+div.vid .label h3
 {
 	font-size: 56px;
 	line-height: 60px;
 	margin: 0px;
 }
 
-#work a .label h3
+div.vid .label h3
 {
 	font-size: 56px;
 }
 
-#work a:hover .label
+/*
+div.vid .label
 {
 	display: block;
 }
+*/
 
-#work a .overlay
+div.vid .overlay
 {
-	display:none;
 	position: absolute;
 	width: 110%;
 	height: 100%;
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.1);
 	top: 0;
 	left: 0;
 	z-index: 0;			
 }
 
-#work a:hover .overlay
+div.vid:hover .overlay
 {
 	display: block;
 }
 
-#work video
+video
 {
 	position: absolute;
-	top: -100px;
+	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: -10;
@@ -166,7 +183,7 @@ footer #copyright-text
 	z-index: 100;
 }
 
-footer .rule
+.rule
 {
 	position: absolute;
 	top: 10px;
@@ -185,12 +202,12 @@ MEDIA QUERY
 @media (max-width: 768px)
 {
 
-	#work a .label .kicker
+	div.vid .label .kicker
 	{
 		font-size: 11px;
 	}
 
-	#work a .label h3 {
+	div.vid .label h3 {
 		font-size: 24px;
 		line-height: 30px;
 		}
@@ -206,7 +223,7 @@ MEDIA QUERY
 		line-height: 24px;
 	}
 
-	#work video
+	video
 	{
 		position: absolute;
 		top: 0;
