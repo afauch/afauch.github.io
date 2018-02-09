@@ -3,18 +3,17 @@ GLOBALS
 –––––––––––––––––––––––––––––––*/
 body
 {
-	background-color: #1D1D1B;
-	font-family: "din-2014", sans-serif;
-	color: #E7E6D9;
-	font-family: "anonymous", monospace;
-	font-size: 18px;
-	line-height: 22px;
+	background-color: #F6F6F6;
+	font-family: "minion-pro", serif;
+	color: #000000;
+	font-size: 28px;
+	line-height: 30px;
 	letter-spacing: -1px;	
 	text-rendering: optimizeLegibility !important;
 	   -webkit-font-smoothing: antialiased !important;
 	transition: all .1s ease-out;
 		-webkit-transition: all .1s ease-out;	
-	padding-top: 212px;		   
+	padding-top: 72px;
 }
 
 body a,
@@ -23,99 +22,146 @@ body a:hover,
 body a:active,
 body a:visited
 {
-	color: #BAB9AF;
+	color: #000000;
 	text-decoration: none;
 }
 
-a:hover,
-#projects a:hover div
-{
-	color: #EABA92 !important;
-}
-
-h2
-{
-	color: #E7E6D9;	
-	font-family: "minion-pro", serif;
-	font-weight: 600;
-	letter-spacing: -1px;
-}
-
-h2
-{
-	font-size: 36px;
-	line-height: 36px;	
-}
-
-p, div
-{
-	color: #BAB9AF;
-}
-
-
-span.line
-{
-	dispay: inline-block;
-}
-
-#projects
-{
-	margin-top: 36px;
-}
-
-#projects a
-{
-	display: block;
-	border: 1px solid #BAB9AF;
-	padding: 8px;
-}
-
-footer
-{
-	margin-top: 102px;
-	margin-bottom: 36px;
-}
-
-footer #contact a
-{
-	text-decoration: underline;
-}
-
-
-.vertical-container
+.row
 {
 	position: relative;
 }
 
-span.vertical
+h2
 {
-	position: absolute;
-	font-size: 16px;
-	left: -60px;
-	top: -60px;
+	font-size: 52px;
+	line-height: 52px;
+	letter-spacing: -2px;
+}
+
+a
+{
 	display: block;
+	position: relative;
+	padding: 20px;
+	margin-bottom: 20px;
+	height: 256px;
+	width: 100%;
+	background-color: #FFFFFF;
+	box-shadow: 4px 4px 0px #000000;
+	border: 3px solid #000000;
+	transform: translate(0px,0px);
+	-webkit-transform: translate(0px,0px);
+	transition: all .2s;
+	overflow: hidden;
+}
+
+a:hover
+{
+	background-color: #FFF8D1;
+	transform: translate(-4px,-4px);
+	box-shadow: 8px 8px 0px #000000;
+	-webkit-transform: translate(-4px,-4px);
+	transition: all .2s;
+}
+
+a:active
+{
+	box-shadow: 3px 3px 0px #000000;
+	transform: translate(1px, 1px);
+	-webkit-transform: translate(1px,1px);
+}
+
+a img
+{
+	position: relative;
+	margin-left: 8px;
+	top: -10px;
+	opacity: 0;
+	width: 36px;
+}
+
+a:hover img
+{
+	opacity: 1;
+}
+
+a h3
+{
+	display: inline-block;	
+	margin: 0;
+	font-family: "balboa", sans-serif;
+	font-weight: 600;
 	text-transform: uppercase;
-	transform: rotate(-90deg);
-	-webkit-transform: rotate(-90deg);
+	font-size: 46px;
+	line-height: 46px;
+}
+
+a h3.condense
+{
+	letter-spacing: -2px;
+}
+
+a h4
+{
+	font-weight: 400;
+	opacity: 1;
+	margin: 0;
+	margin-top: 0px;
+	display: block;
+}
+
+a span.related-app
+{
+	display: inline-block;
+	font-family: "balboa", sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-top: -4px;
+	float: right;
+}
+
+footer
+{
+	margin-top: 72px;
+	margin-bottom: 56px;
+	font-weight: 600;	
+	padding-bottom: 92px;
+}
+
+footer a
+{
+	display: inline;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	margin: 0;
+	padding: 0;
+	border-bottom: 3px solid #000000;
+}
+
+footer a:hover
+{
+	background-color: #F6F6F6;
+}
+
+#signature
+{
+	float: left;
+	font-size: 52px;
+	line-height: 52px;
+	letter-spacing: -2px;	
 }
 
 /*––––––––––––––––––––––––––––––
 MEDIA QUERY
 –––––––––––––––––––––––––––––––*/
-@media (min-width: 768px)
+@media (max-width: 768px)
 {
-
-	#projects a
-	{
-		display: block;
-		border: none;
-		padding: 0px;
-	}
 
 	h2
 	{
-		font-size: 42px;
-		line-height: 42px;
+		font-size: 36px;
+		line-height: 36px;
 	}
 
 
