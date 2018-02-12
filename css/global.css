@@ -402,6 +402,30 @@ MEDIA QUERY
 		line-height: 28px !important;
 	}
 
+	#present h1 a,
+	#present h2 a,
+	#future h1 a,
+	#future h2 a	
+	{
+		background-clip: border-box;
+		-webkit-background-clip: border-box;
+		background: transparent;
+	    text-fill-color: currentcolor;	
+	    -webkit-text-fill-color: currentcolor !important;	
+	}
+
+	#present h1 a,
+	#present h2 a
+	{
+		color: #22A6D9;
+	}
+
+	#future h1 a,
+	#future h2 a
+	{
+		color: #FFD756;
+	}
+
 	#past a:after,
 	#present a:after,
 	#future a:after {
@@ -410,6 +434,11 @@ MEDIA QUERY
 	  height: 4px;
 	  transform: translateY(0px);
 	  opacity: 1;
+	}
+
+	#problem-period
+	{
+		display: none;
 	}
 
 }
