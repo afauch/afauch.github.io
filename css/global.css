@@ -76,7 +76,9 @@ span.kicker
 
 	display: inline-block;
 	  background-image: -webkit-linear-gradient(-188deg, #2FCAE8 7%, #22A6D9 90%);
+	  background-clip: text;
 	  -webkit-background-clip: text;
+	  text-fill-color: transparent;
 	  -webkit-text-fill-color: transparent;	
 	  transform: translateY(0px);
 	  transition: all .1s ease-out;
