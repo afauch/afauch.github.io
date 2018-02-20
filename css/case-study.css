@@ -149,6 +149,12 @@ a:visited
 	margin-top: 16px;
 }
 
+#back-to-top
+{
+	display: block;
+	margin-bottom: 64px;
+}
+
 /*––––––––––––––––––––––––––––––
 MEDIA QUERY
 –––––––––––––––––––––––––––––––*/
