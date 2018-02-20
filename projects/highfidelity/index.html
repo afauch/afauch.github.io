@@ -32,16 +32,16 @@ AARON.FAUCHER@GMAIL.COM
 
 	<!-- BOOTSTRAP
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="/css/vendors/_bootstrap.css">
+	<link rel="stylesheet" href="../../css/vendors/bootstrap.css">
 
 	<!-- RESET
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" href="/css/vendors/_normalize.css">	
+	<link rel="stylesheet" href="../../css/vendors/normalize.css">	
 
 	<!-- ADOBE TYPEKIT
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<link rel="stylesheet" href="https://use.typekit.net/xsr8czi.css">
-
+	
 	<!-- FONT AWESOME
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -53,7 +53,8 @@ AARON.FAUCHER@GMAIL.COM
 
 	<!-- CSS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<link rel="stylesheet" type="text/css" href="css/global.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/global.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/case-study.css" />
 
 	<!-- GOOGLE ANALYTICS
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -78,7 +79,7 @@ AARON.FAUCHER@GMAIL.COM
 <nav>
 	<div class="container">
 		<div class="row">
-			<a href="#" id="wordmark">Aaron Faucher</a>
+			<a href="../../index.html" id="wordmark">Aaron Faucher</a>
 			<div class="prenav">
 				<div id="nav-icon">
 				  <span></span>
@@ -90,105 +91,227 @@ AARON.FAUCHER@GMAIL.COM
 		</div>
 		<div class="row">
 			<div class="menu">
-				<a href="index.html" class="col-xs-12">Work <i class="fas fa-caret-right"></i></a>
+				<a href="../../index.html" class="col-xs-12">Work <i class="fas fa-caret-right"></i></a>
 				<a href="https://medium.com/@afauch" target="_blank" class="col-xs-12">Writing <i class="fas fa-caret-right"></i></a>
 				<a href="mailto:aaron.faucher@gmail.com" target="_blank" class="col-xs-12">Email me <i class="fas fa-caret-right"></i></a>
+				<div id="menu-underlay"></div>				
 			</div>
 		</div>
 	</div>	
 </nav>
 
-<!-- SECTION
+<!-- VIDEO
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="about">
+<section id="video">
 
-	<div class="container">
-
-		<div class="row">
-
-			<aside class="col-xs-12 col-md-8">
-
-				<h2>
-					<span class="line">I’m a product</span>
-					<span class="line">designer bringing</span>
-					<span class="line"><span class="highlight">mixed reality</span> to life.</span>
-				</h2>
-
-			</aside>
-
-		</div>
-
-	</div>
+		<video autoplay="autoplay" loop="loop" playsinline/>
+			<source type="video/mp4" src="video.mp4"/>
+		</video>
 
 </section>
 
-<!-- WORK
+<!-- PROBLEM/SOLUTION
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<section id="work">
+<section>
 
-	<!-- ALL -->
+	<!-- INTRO -->
 
 	<div class="container">
 		
 		<div class="row">
 
-			<a href="https://highfidelity.com/marketplace/items/620b29d7-c51a-4070-b20c-c0c1e29bb342" target="_blank" class="project">
-				<div class="col-xs-12 col-md-7">
-					<img class="thumb" src="projects/highfidelity/mockup-1.png" />
-				</div>
-				<div class="col-xs-12 col-md-5">
-					<h3>High Fidelity<i class="fas fa-caret-right"></i></h3>
-					<h2><span>Designing collaborative creation tools for social VR.</span></h2>
-					<div class="tags">
-						<span>HTC Vive</span>
-						<span>Oculus Rift</span>
-						<span>Product Design</span>
-						<span>UX Research</span>
-						<span>Unity / C#</span>
-						<span>Interaction Design</span>
-					</div>
-				</div>
-			</a>
+			<div id="problem" class="col-xs-12">
+				<span class="kicker">Problem</span>
+				<span>It was hard for High Fidelity’s users to create 3D objects collaboratively using desktop tools.</span>
+			</div>
+			<div id="solution" class="col-xs-12">
+				<span class="kicker">Solution</span>
+				<span>I designed and shipped a VR app that made it easy for users to be creative with their friends.</span>
+			</div>
 
 		</div>
 
-		<div class="row">	
+		<div class="row">
+			<div class="col-xs-12 col-sm-4 col-sm-push-2" id="glance">
+				<span class="kicker">Client</span>
+				<span>High Fidelity, Inc.</span>
+				<span class="kicker">Role</span>
+				<span>Lead Designer</span>		
+				<span class="kicker">Team</span>
+				<ul>
+					<li>Alisa Kurt</li>
+					<li>David Rowe</li>
+					<li>Alan Zimmerman</li>
+				</ul>
+				<span class="kicker">Year</span>
+				<span>2017</span>	
+			</div>
+			<div class="col-xs-12 col-sm-4 col-sm-push-2" id="glance">	
+				<img src="mockup-1.png" class="thumb" />
+			</div>				
+		</div>
 
-			<a href="https://drive.google.com/open?id=1sO2OoC-6id5SPwBXB-rlbZ0sW-oY89t_" target="_blank" class="project">
-				<div class="col-xs-12 col-md-7 col-md-push-5">
-					<img class="thumb" src="projects/socialar/mockup-1.png" />
-				</div>
-					<div class="col-xs-12 col-md-5 col-md-pull-7">				
-					<h3>Carnegie Mellon University<i class="fas fa-caret-right"></i></h3>
-					<h2><span>Augmenting the professional networking experience.</span></h2>
-					<div class="tags">
-						<span>HoloLens</span>
-						<span>Product Design</span>
-						<span>UX Research</span>
-						<span>Interaction Design</span>					
-					</div>
-				</div>
-			</a>
+		<div class="row" id="process">
+
+			<span class="col-xs-12 col-sm-8 col-sm-push-2 kicker">Process</span>
+			<img id="process" class="col-xs-12 col-sm-8 col-sm-push-2" src="process.png" />
 
 		</div>
+
+
+
+	</div>
+
+	<!-- CONTENT -->
+	<div class="container" id="content">
+
 		<div class="row">
 
-			<a href="https://www.behance.net/gallery/46198309/TCPA" target="_blank" class="project">
-				<div class="col-xs-12 col-md-7">
-					<img class="thumb col-xs-12 col-md-8" src="projects/tcpa/mockup-1.png" />
-				</div>
-				<div class="col-xs-12 col-md-5">								
-					<h3>TCPA<i class="fas fa-caret-right"></i></h3>
-					<h2><span>Enhancing the member experience for TCPA.</span></h2>
-					<div class="tags">
-						<span>Web</span>					
-						<span>Information Architecture</span>
-						<span>UX Design</span>					
-						<span>Visual Design</span>	
-					</div>
-				</div>
-			</a>
+			<div class="col-xs-12 col-sm-8 col-sm-push-2">
+				<h2>To ensure the features we designed aligned with user motivations, I advocated for a design research budget.</h2>
+				<p>The High Fidelity team knew intuitively from observations that a new creative tool would be valued by the user community. However, before ideating product features, I felt the design process needed more direct input from two groups: High Fidelity’s existing user base, and prospective users High Fidelity hoped to target.</p>
 
+				<figure>
+					<img src="previous.png" />
+				</figure>
+				<figcaption>Previously, users used a desktop-first, text-heavy interface to edit their 3D domains. (<a href="https://docs.highfidelity.com/create-and-explore/entities/create-mode" target="_blank">src</a>)</figcaption>
+
+				<p>In a two-week research sprint, I donned my virtual clipboard and roamed around several High Fidelity’s domains, starting up conversations with users to learn out about how they were using the High Fidelity product. I also interviewed several users who fit the profile of High Fidelity’s prospective user base to understand their motivations for using VR.</p>
+
+				<figure>
+					<img src="interviews.jpg" />
+				</figure>
+				<figcaption>I hung out in High Fidelity's most popular VR domains to observe users and ask them questions about their creative process. (<a href="https://www.youtube.com/watch?v=DVZ2U7uLT0w" target="_blank">src</a>)</figcaption>
+			
+			</div>
+		
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-push-2">
+
+				<h2>For users, virtual creation was less about making <em>things</em>, and more about making <em>friends</em>.</h2>
+				<p>We build relationships by sharing novel experiences. Whether it’s traveling with family, going to a concert with friends, or building a product with co-workers, our relationships start and are strengthened by encountering new, unique situations with other people. If we foster an environment where it is simple and fun to make the building blocks for novel experiences, and where these novel experiences can arise unexpectedly and spontaneously, then we simultaneously foster an environment that’s natural for starting and strengthening relationships.</p>
+
+				<p>In short, our team decided to focus on enabling users to make the ‘about’ things – things to talk about, to laugh about, to remember about.</p>
+
+				<p>200+ data points later, it became clear that there were a broad range of users on High Fidelity’s platform. Based on initial research, I recommended that the Shapes project focus on tools for social creators, rather than meticulous artist or designer-types. For these personas, the social and collaborative experience represents a core intrigue and motivation for participation in High Fidelity. For these personas, virtual building served as a ‘means to an end’ for introduction into a new community, a tool for facilitating social connection and conversation.</p>
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-push-2">
+
+				<h2>I led the team through several prototype iterations, and tested the app with users biweekly to identify design flaws.</h2>		
+				
+				<h3>Constructing information architecture from scratch</h3>
+				<p>AR/VR products face a unique challenge; in many cases, the existing paradigms the user is familiar with doesn’t align with the capabilities and task flows of a VR app. My earliest ‘wireframe’ prototypes sought to discern how users would most naturally seek to create and interact with objects and apply parameters like size, color, and physics to them. I conducted a close comparative analysis of several existing 3D creation tools, and sketched several ideas to tease out the wide range of how users might conceptualize this tool.</p>
+
+				<figure>
+					<img src="sketches.jpg" />
+				</figure>
+				<figcaption>Sketching different interaction paradigms.</figcaption>
+
+				<figure>
+					<video autoplay="autoplay" loop="loop"/ muted playsinline>
+						<source type="video/mp4" src="usertesting-reel.mp4"/>
+						<img src="usertesting-reel.gif"/>
+					</video>					
+				</figure>
+				<figcaption>I tested early Unity prototypes with users to understand whether a tool-based or selection-based model would be most intuitive.</figcaption>
+
+				<h3>Defining ergonomics.</h3>
+				<p>Moreso than I ever would have expected, the question of “where” to place UI components became a consistent design question. We ran extensive A/B testing in the early prototype stages to understand where menus were comfortable, where they weren’t, and how this intersected with visual usability. For example, the decision to mount the UI on the avatar’s hand joint, rather than wrist joint, was in part due to the need for a two-sided menu (so the user could flick their wrist to access a different “side” of the menu), and the need for precise selection of UI elements (for example, color selection) when using the dominant hand as a pointer.</p>
+
+				<h3>Giving the app a great <em>feel</em>.</h3>
+				<p>It’s hard to give users a lot of features without giving them a lot of menus. We knew from comparative analysis that VR apps that “feel” great don’t rely on the user remembering a lot of controller buttons. Great VR apps tend to use a “grab-first” interaction paradigm so users only have to think about a primary interaction. Many of the UI design decisions ultimately came down a) maintaining a “physical” paradigm in which the UI was navigable with the trigger, rather than distributed across controller buttons, and b) respecting High Fidelity’s platform-wide button mappings for basic navigation.</p>
+
+				<h3>Building a system for feature growth.</h3>
+				<p>The Shapes beta would not include all features on the roadmap, but the UI paradigm I was creating had to be flexible enough to accommodate new features as they were built. A major change in UI interaction paradigm in future releases would be extremely disruptive to existing users. Ultimately, I decided that a tool-based paradigm would allow new capabilities to be added to the app on High Fidelity’s timeline, without disrupting the user experience.</p>		
+
+				<figure>
+					<img src="grid.png" />
+				</figure>
+				<figcaption>A common, pixel-perfect grid needed to support a variety of tool layouts.</figcaption>
+
+
+				<h3>Reducing cognitive load with gestures.</h3>
+				<p>With Fantastic Contraption as an inspiration, our initial prototypes investigated ways menus and buttons could be reduced and offloaded to hand and arm gestures. One memorable user during testing told a story about how he once visited a friend for dinner, and the friend’s father threw chicken bones behind his shoulder into the alleyway. Rather than rely on a button or tool for deletion, I prototyped a gesture that allows users to toss an object behind their head to delete it. I called it "chickenboning."</p>
+
+				<figure>
+					<video autoplay="autoplay" loop="loop"/ muted playsinline>
+						<source type="video/mp4" src="gestural-menu.mp4"/>
+						<img src="gestural-menu.gif"/>
+					</video>
+				</figure>
+				<figcaption>Here, I played with the idea of rotating the hand as a means of accessing contextual shortcuts.</figcaption>
+
+				<figure>
+					<video autoplay="autoplay" loop="loop"/ muted playsinline>
+						<source type="video/mp4" src="chickenbone.mp4"/>
+						<img src="chickenbone.gif"/>
+					</video>
+				</figure>
+				<figcaption>Prototyping shortcut gestures for object deletion. This one is called 'chickenboning,' where the user tosses an object behind the head.</figcaption>
+
+				<h3>Reimagining UI components for VR usability.</h3>
+				<p>One of the Shapes tools required a continuous slider, but we found that selecting with precision was difficult and uncomfortable when relying on user elbow rotation. I prototyped a microinteraction that would expand the component to allow for a higher level of precision with greater comfort.</p>
+
+				<figure>
+					<img src="sliders.gif" loop="infinite" />
+				</figure>
+				<figcaption>Prototyping 2D UI components to improve usability in VR.</figcaption>
+
+
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-push-2">
+
+				<h2>I worked closely with the production engineer to spec and optimize the final design for live deployment.</h2>
+
+				<p>High Fidelity runs on its own open-source tech stack that allows for performant multi-user collaboration. This tech stack had its own set of capabilities and constraints that differed from the Unity environment I was familiar with.</p>
+
+				<p>I worked closely with the engineer to tweak app features to better fit within the performance bounds that High Fidelity required for its deployed apps.</p>
+
+				<figure>
+					<video autoplay="autoplay" loop="loop"/ muted playsinline>
+						<source type="video/mp4" src="stress-test.mp4"/>
+						<img src="stress-test.gif"/>
+					</video>
+				</figure>
+				<figcaption>Stress-testing performance on High Fidelity's tech stack.</figcaption>
+
+				<figure>
+					<video autoplay="autoplay" loop="loop"/ muted playsinline>
+						<source type="video/mp4" src="maya-ui.mp4"/>
+						<img src="maya-ui.gif"/>
+					</video>
+				</figure>
+				<figcaption>Preparing UI assets for developer handoff in Maya.</figcaption>
+
+				<figure>
+					<img src="model-left.png" />
+				</figure>			
+				<figcaption>The final design included a left-hand menu for instantiating primitives and toggling tools, and a right-hand model worn around the wrist to reduce mode errors.</figcaption>				
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-8 col-sm-push-2">
+
+				<h2>One week after its beta release, <em>Shapes</em> rose to the top of High Fidelity’s Marketplace.</h2>
+				<p>Shapes resonated with the High Fidelity user base, rapidly becoming the third most downloaded app on the High Fidelity Marketplace – putting it in the top 1% of apps on the store. It lowered the barrier to entry for 3D creation, and allowed users to build their domains more naturally with their friends.</p>
+
+				<figure>
+					<img src="users.png" />					
+				</figure>
+				<figcaption>High Fidelity users decorate their VR domains with objects made in the <em>Shapes</em> app.</figcaption>
+
+
+
+			</div>
 		</div>
 
 	</div>	
@@ -233,7 +356,7 @@ AARON.FAUCHER@GMAIL.COM
 
 <!-- SCRIPTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="/js/script.js"></script>
+<script src="../../js/script.js"></script>
 
 </body>
 </html>

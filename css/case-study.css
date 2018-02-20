@@ -1,0 +1,172 @@
+/*––––––––––––––––––––––––––––––
+GLOBALS
+–––––––––––––––––––––––––––––––*/
+
+video
+{
+	width: 100%;
+}
+
+.kicker,
+span.kicker,
+#glance span.kicker,
+#problem span.kicker,
+#solution span.kicker
+{
+	font-weight: 600;
+	font-size: 20px;
+	letter-spacing: 0.2px;
+	font-family: "proxima-nova", sans-serif;
+	color: #FF6262;
+	text-transform: uppercase;
+}
+
+#problem,
+#solution
+{
+	padding: 32px;
+	font-family: "europa-bold", sans-serif;
+	font-size: 42px;
+	color: #696969;
+	letter-spacing: -1.05px;
+	line-height: 52px;
+	position: relative;
+	top: -92px;
+}
+
+#problem
+{
+	color: #FFFFFF;	
+}
+
+#problem span,
+#solution span
+{
+	display: block;
+	font-size: 42px;
+	line-height: 44px;
+}
+
+#problem span.kicker
+{
+	color: rgba(0,0,0,0.52);
+}
+
+
+#problem
+{
+	left: -16px;
+	background-color: #FF6262;
+	box-shadow: 0 -2px 13px 0 rgba(0,0,0,0.22);
+	border-radius: 2px;
+}
+#solution
+{
+	left: 16px;
+	background-color: #FFFFFF;
+	box-shadow: 0 2px 13px 0 rgba(0,0,0,0.22);
+	border-radius: 2px 2px;
+}
+
+#glance span
+{
+	display: block;
+	font-size: 20px;
+	margin-bottom: 16px;
+}
+
+#glance ul
+{
+	list-style-type: none;
+	margin-top: 0;
+	margin-bottom: 16px;
+	padding-left: 0;
+	font-size: 20px;
+}
+
+#glance span.kicker
+{
+	margin-bottom: 0px;
+}
+
+img#process
+{
+	margin-top: 32px;
+	margin-bottom: 64px;
+}
+
+h2
+{
+	color: #030303;
+	font-size: 32px;
+}
+
+h3
+{
+	font-size: 24px;
+	color: #FF6262;
+}
+
+p
+{
+	font-size: 24px;
+	font-family: "proxima-nova", sans-serif;
+	font-weight: 400;
+}
+
+figure,
+figure img,
+figure video
+{
+	margin-bottom: 0;
+}
+
+figcaption
+{
+	margin-top: -8px;
+	padding: 24px 16px 16px 16px;
+	color: #FFFFFF;
+	background-color: #696969;
+	margin-bottom: 48px;
+}
+
+#content figure,
+#content img
+{
+	width: 100%;
+	margin-left: 0;
+}
+
+a,
+a:hover,
+a:visited
+{
+	color: #FF6262;
+}
+
+#process img
+{
+	margin-top: 16px;
+}
+
+/*––––––––––––––––––––––––––––––
+MEDIA QUERY
+–––––––––––––––––––––––––––––––*/
+@media (max-width: 768px)
+{
+
+	#problem,
+	#solution
+	{
+		left: 0;
+	}
+
+	#problem span,
+	#solution span
+	{
+		font-size: 32px;
+		line-height: 36px;
+	}
+	
+
+}
