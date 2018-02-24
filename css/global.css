@@ -48,6 +48,11 @@ span.line
 PROJECT TABS
 –––––––––––––––––––––––––––––––*/
 
+#work img#protected
+{
+	width: 8px;
+	margin-right: 4px;
+}
 
 #work .row
 {
