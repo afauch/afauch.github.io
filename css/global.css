@@ -237,7 +237,7 @@ MENU
 .menu a
 {
 	color: #FF6262;
-	font-size: 72px;
+	font-size: 56px;
 }
 
 .menu a svg
@@ -436,8 +436,7 @@ MEDIA QUERY
 
 	.menu a
 	{
-		color: #FF6262;
-		font-size: 56px;
+		font-size: 72px;
 	}
 
 	#work img
