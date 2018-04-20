@@ -7,6 +7,24 @@ video
 	width: 100%;
 }
 
+#video
+{
+	position: fixed;
+	width: 100vw;
+}
+
+section:nth-of-type(2)
+{
+	position: relative;
+	top: 100vh;
+}
+
+section#contact, footer
+{
+	position: relative;
+	top: 100vh;
+}
+
 .kicker,
 span.kicker,
 #glance span.kicker,

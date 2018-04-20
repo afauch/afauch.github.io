@@ -44,6 +44,11 @@ span.line
 	display: inline-block;
 }
 
+section, footer
+{
+	background-color: #E4E4E4
+}
+
 /*––––––––––––––––––––––––––––––
 PROJECT TABS
 –––––––––––––––––––––––––––––––*/
