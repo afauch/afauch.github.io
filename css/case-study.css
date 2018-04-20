@@ -24,48 +24,36 @@ span.kicker,
 #problem,
 #solution
 {
-	padding: 32px;
 	font-family: "europa-bold", sans-serif;
 	font-size: 42px;
-	color: #696969;
+	color: #030303;
 	letter-spacing: -1.05px;
 	line-height: 52px;
 	position: relative;
-	top: -92px;
+	margin-top: 36px;
 }
 
-#problem
+#problem span
 {
-	color: #FFFFFF;	
+	display: block;
+	font-size: 24px;
+	line-height: 30px;
 }
 
-#problem span,
+#solution
+{
+	border-top: solid 2px rgba(0,0,0,.13);
+	border-bottom: solid 2px rgba(0,0,0,.13);
+	padding-top: 24px;
+	padding-bottom: 36px;	
+	margin-bottom: 48px;
+}
+
 #solution span
 {
 	display: block;
 	font-size: 42px;
 	line-height: 44px;
-}
-
-#problem span.kicker
-{
-	color: rgba(0,0,0,0.52);
-}
-
-
-#problem
-{
-	left: -16px;
-	background-color: #FF6262;
-	box-shadow: 0 -2px 13px 0 rgba(0,0,0,0.22);
-	border-radius: 2px;
-}
-#solution
-{
-	left: 16px;
-	background-color: #FFFFFF;
-	box-shadow: 0 2px 13px 0 rgba(0,0,0,0.22);
-	border-radius: 2px 2px;
 }
 
 #glance span
