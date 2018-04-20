@@ -434,6 +434,12 @@ MEDIA QUERY
 @media (min-width: 768px)
 {
 
+	.menu a
+	{
+		color: #FF6262;
+		font-size: 56px;
+	}
+
 	#work img
 	{
 		width: 100%;
